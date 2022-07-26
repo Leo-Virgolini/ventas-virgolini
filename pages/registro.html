@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../resources/favicon/apple-touch-icon.png">
+    <link rel="stylesheet" href="../resources/css/styles.css">
+    <title>Ventas™-Registro</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../resources/images/venta.png" alt="Logo">
+                <h1>VENTA™</h1>
+            </a>
+        </div>
+        <!-- Navegador -->
+        <nav>
+            <a href="../index.html" class="navInicio">Inicio</a>
+            <a href="#" class="navCategorias">Categorías↓</a>
+            <a href="productos.html" class="navProductos">Productos</a>
+            <a href="contacto.html" class="navContacto">Contacto</a>
+            <div class="navDerecha">
+                <a href="carrito.html" class="navCarrito">Carrito</a>
+                <a href="login.html" class="navLogin">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Registrarse -->
+        <section>
+            <h2>Registrarse</h2>
+
+            <form id="registro" method="POST" action="#">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" autocomplete="given-name" required
+                        placeholder="Nombre">
+                </div>
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" autocomplete="family-name" required
+                        placeholder="Apellido">
+                </div>
+                <div>
+                    <label for="nacimiento">Fecha de nacimiento:</label>
+                    <input type="date" id="nacimiento" name="nacimiento" autocomplete="bday" required
+                        placeholder="dd/mm/aaaa">
+                </div>
+                <div>
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" name="dni" inputmode="numeric" required placeholder="DNI">
+                </div>
+                <div>
+                    <label for="localidad">Localidad:</label>
+                    <input type="text" id="localidad" name="localidad" autocomplete="address-level2" required
+                        placeholder="Localidad">
+                </div>
+                <div>
+                    <div>
+                        <label for="calle">Calle:</label>
+                        <input type="text" id="calle" name="calle" autocomplete="street-address" required
+                            placeholder="Calle">
+                    </div>
+                    <div>
+                        <label for="numero">N°:</label>
+                        <input type="text" id="numero" name="numero" required placeholder="N°">
+                    </div>
+                </div>
+                <div>
+                    <label for="numero">Código postal:</label>
+                    <input type="text" id="codigoPostal" name="codigoPostal" autocomplete="postal-code" required
+                        placeholder="Código postal">
+                </div>
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" id="telefono" name="telefono" inputmode="numeric" autocomplete="tel" required
+                        placeholder="Teléfono">
+                </div>
+                <hr>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required
+                        placeholder="email@ejemplo.com">
+                </div>
+                <div>
+                    <label for="pass">Contraseña:</label>
+                    <input type="password" id="pass" name="password" autocomplete="new-password" required
+                        placeholder="Contraseña">
+                </div>
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+    </main>
+    <!-- Footer -->
+    <hr>
+    <footer>
+        <h3>Contacto</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15299.25245645202!2d-58.49360352369156!3d-34.53585964617376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6cc77eb3961%3A0xee434cae937168d9!2sFlorida%2C%20Buenos%20Aires%20Province!5e0!3m2!1sen!2sar!4v1657232248923!5m2!1sen!2sar"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <ul>
+            <li>Calle Falsa 1234, Florida, Buenos Aires, Argentina</li>
+            <li><a href="tel://23923929210">+54 11 12345678</a></li>
+            <li>ventas@ventas.com</li>
+        </ul>
+        <div class="iconos">
+            <a href="#">
+                <img src="../resources/images/whatsapp.png" alt="Whatsapp">
+            </a>
+            <a href="#">
+                <img src="../resources/images/instagram.png" alt="Instagram">
+            </a>
+            <a href="#">
+                <img src="../resources/images/facebook.png" alt="Facebook">
+            </a>
+        </div>
+        <div class="derechos">
+            <img src="../resources/images/ventas.png" alt="Logo">
+            <p>
+                VENTAS Copyright © All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

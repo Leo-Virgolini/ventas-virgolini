@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../resources/favicon/apple-touch-icon.png">
+    <link rel="stylesheet" href="../resources/css/styles.css">
+    <title>Ventas™-Carrito</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../resources/images/venta.png" alt="Logo">
+                <h1>VENTA™</h1>
+            </a>
+        </div>
+        <!-- Navegador -->
+        <nav>
+            <a href="../index.html" class="navInicio">Inicio</a>
+            <a href="#" class="navCategorias">Categorías↓</a>
+            <a href="productos.html" class="navProductos">Productos</a>
+            <a href="contacto.html" class="navContacto">Contacto</a>
+            <div class="navDerecha">
+                <a href="carrito.html" class="navCarrito">Carrito</a>
+                <a href="login.html" class="navLogin">Login</a>
+            </div>
+            <!-- Buscador -->
+            <div class="buscador">
+                <input type="search" name="buscar" id="buscar" placeholder="Buscar" required autofocus>
+                <button type="submit">Buscar</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Carrito de compra -->
+        <section class="carrito">
+            <h2>Carrito</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Articulo</th>
+                        <th scope="col">Imagen</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Subtotal</th>
+                        <th scope="col">Quitar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Producto 1</td>
+                        <td>
+                            <img src="https://picsum.photos/200?random=1" alt="Producto 1">
+                        </td>
+                        <td> $5000.00</td>
+                        <td>
+                            2
+                        </td>
+                        <td>
+                            $10000.00
+                        </td>
+                        <td>
+                            <form method="POST" action="#">
+                                <button type="submit">
+                                    QUITAR
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Producto 1</td>
+                        <td>
+                            <img src="https://picsum.photos/200?random=2" alt="Producto 2">
+                        </td>
+                        <td> $3000.00</td>
+                        <td>
+                            3
+                        </td>
+                        <td>
+                            $9000.00
+                        </td>
+                        <td>
+                            <form method="POST" action="#">
+                                <button type="submit">
+                                    QUITAR
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>TOTAL: $19000.00</h3>
+
+            <form method="POST" action="#">
+                <button type="submit">GENERAR PAGO</button>
+            </form>
+        </section>
+    </main>
+    <!-- Footer -->
+    <hr>
+    <footer>
+        <h3>Contacto</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15299.25245645202!2d-58.49360352369156!3d-34.53585964617376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6cc77eb3961%3A0xee434cae937168d9!2sFlorida%2C%20Buenos%20Aires%20Province!5e0!3m2!1sen!2sar!4v1657232248923!5m2!1sen!2sar"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <ul>
+            <li>Calle Falsa 1234, Florida, Buenos Aires, Argentina</li>
+            <li><a href="tel://23923929210">+54 11 12345678</a></li>
+            <li>ventas@ventas.com</li>
+        </ul>
+        <div class="iconos">
+            <a href="#">
+                <img src="../resources/images/whatsapp.png" alt="Whatsapp">
+            </a>
+            <a href="#">
+                <img src="../resources/images/instagram.png" alt="Instagram">
+            </a>
+            <a href="#">
+                <img src="../resources/images/facebook.png" alt="Facebook">
+            </a>
+        </div>
+        <div class="derechos">
+            <img src="../resources/images/ventas.png" alt="Logo">
+            <p>
+                VENTAS Copyright © All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
