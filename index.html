@@ -7,143 +7,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="resources/favicon/apple-touch-icon.png">
     <link rel="stylesheet" href="resources/css/styles.css">
+    <script src="https://kit.fontawesome.com/bda957b7e9.js" crossorigin="anonymous"></script>
     <title>Ventas™-Inicio</title>
 </head>
 
 <body>
     <div class="container">
-        <!-- Header -->
-        <header>
-            <!-- Logo -->
-            <div class="logo">
-                <a href="index.html">
+        <div class="gridHeader">
+            <!-- Header -->
+            <header>
+                <!-- Logo -->
+                <a href="index.html" class="logo">
                     <img src="resources/images/venta.png" alt="Logo">
                     <h1>VENTAS™</h1>
                 </a>
-            </div>
-            <!-- Navegador -->
-            <nav>
-                <div class="navegador">
-                    <div class="navIzquierda">
-                        <a href="index.html" class="navInicio">Inicio</a>
-                        <a href="#" class="navCategorias">Categorías↓</a>
-                        <a href="pages/productos.html" class="navProductos">Productos</a>
-                        <a href="pages/contacto.html" class="navContacto">Contacto</a>
+                <!-- Navegador -->
+                <nav>
+                    <div class="navegador">
+                        <div class="navegadorIzq">
+                            <a href="index.html" class="navInicio">
+                                <i class="fa-solid fa-house"></i>Inicio
+                            </a>
+                            <a href="#" class="navCategorias">
+                                <i class="fa-solid fa-tags"></i>Categorías↓
+                            </a>
+                            <a href="pages/productos.html" class="navProductos">
+                                <i class="fa-solid fa-basket-shopping"></i>Productos
+                            </a>
+                            <a href="pages/contacto.html" class="navContacto">
+                                <i class="fa-solid fa-address-book"></i>Contacto
+                            </a>
+                        </div>
+                        <div class="navegadorDer">
+                            <a href="pages/carrito.html" class="navCarrito">
+                                <i class="fa-solid fa-cart-shopping"></i>Carrito
+                            </a>
+                            <a href="pages/login.html" class="navLogin">
+                                <i class="fa-solid fa-right-to-bracket"></i>Login
+                            </a>
+                        </div>
                     </div>
-                    <div class="navDerecha">
-                        <a href="pages/carrito.html" class="navCarrito">Carrito</a>
-                        <a href="pages/login.html" class="navLogin">Login</a>
+                    <!-- Buscador -->
+                    <div class="buscador">
+                        <input type="search" name="buscar" id="buscar" placeholder="Buscar" required autofocus>
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i>Buscar</button>
                     </div>
-                </div>
-                <!-- Buscador -->
-                <div class="buscador">
-                    <input type="search" name="buscar" id="buscar" placeholder="Buscar" required autofocus>
-                    <button type="submit">Buscar</button>
-                </div>
-            </nav>
-        </header>
-
-        <main class="container">
-            <!-- Carrousel de imágenes con ofertas -->
-            <section class="ofertas">
-                <h2>OFERTAS</h2>
-                <img src="https://picsum.photos/1920/600?random=9" alt="Ofertas">
-            </section>
-            <!-- Categorías -->
-            <section class="categorias">
-                <div class="cardCategoria">
-                    <a href="#">
-                        <p>Categoría 1</p>
-                        <img src="https://picsum.photos/200?random=1" alt="Categoría 1">
-                    </a>
-                    <hr>
-                </div>
-                <div class="cardCategoria">
-                    <a href="#">
-                        <p>Categoría 2</p>
-                        <img src="https://picsum.photos/200?random=2" alt="Categoría 2">
-                    </a>
-                    <hr>
-                </div>
-                <div class="cardCategoria">
-                    <a href="#">
-                        <p>Categoría 3</p>
-                        <img src="https://picsum.photos/200?random=3" alt="Categoría 3">
-                    </a>
-                    <hr>
-                </div>
-                <div class="cardCategoria">
-                    <a href="#">
-                        <p>Categoría 4</p>
-                        <img src="https://picsum.photos/200?random=4" alt="Categoría 4">
-                    </a>
-                    <hr>
-                </div>
-            </section>
-            <!-- Listado de productos -->
-            <section class="productos">
-                <h2>NOVEDADES</h2>
-                <div class="cardProducto">
-                    <a href="#">
-                        <img src="https://picsum.photos/200?random=5" alt="Producto 1">
-                        <p>Producto 1</p>
-                        <p class="precio">$9999.99</p>
-                    </a>
-                </div>
-                <div class="cardProducto">
-                    <a href="#">
-                        <img src="https://picsum.photos/200?random=6" alt="Producto 2">
-                        <p>Producto 2</p>
-                        <p class="precio">$9999.99</p>
-                    </a>
-                </div>
-                <div class="cardProducto">
-                    <a href="#">
-                        <img src="https://picsum.photos/200?random=7" alt="Producto 3">
-                        <p>Producto 3</p>
-                        <p class="precio">$9999.99</p>
-                    </a>
-                </div>
-                <div class="cardProducto">
-                    <a href="#">
-                        <img src="https://picsum.photos/200?random=8" alt="Producto 4">
-                        <p>Producto 4</p>
-                        <p class="precio">$9999.99</p>
-                    </a>
-                </div>
-            </section>
-        </main>
+                </nav>
+            </header>
+        </div>
+        <!-- Main -->
+        <div clas="gridMain">
+            <main>
+                <!-- Carrousel de imágenes con ofertas -->
+                <section class="ofertas">
+                    <h2>OFERTAS</h2>
+                    <img src="https://picsum.photos/1920/600?random=9" alt="Ofertas">
+                </section>
+                <!-- Categorías -->
+                <section class="categorias">
+                    <div class="cardCategoria">
+                        <a href="#">
+                            <p>Categoría 1</p>
+                            <img src="https://picsum.photos/200?random=1" alt="Categoría 1">
+                        </a>
+                        <hr>
+                    </div>
+                    <div class="cardCategoria">
+                        <a href="#">
+                            <p>Categoría 2</p>
+                            <img src="https://picsum.photos/200?random=2" alt="Categoría 2">
+                        </a>
+                        <hr>
+                    </div>
+                    <div class="cardCategoria">
+                        <a href="#">
+                            <p>Categoría 3</p>
+                            <img src="https://picsum.photos/200?random=3" alt="Categoría 3">
+                        </a>
+                        <hr>
+                    </div>
+                    <div class="cardCategoria">
+                        <a href="#">
+                            <p>Categoría 4</p>
+                            <img src="https://picsum.photos/200?random=4" alt="Categoría 4">
+                        </a>
+                        <hr>
+                    </div>
+                </section>
+                <!-- Listado de productos -->
+                <h2>NOVEDADES</h2> <!-- adentro de la section? -->
+                <section class="productos">
+                    <div class="cardProducto">
+                        <a href="#">
+                            <img src="https://picsum.photos/200?random=5" alt="Producto 1">
+                            <p>Producto 1</p>
+                            <p class="precio">$9999.99</p>
+                        </a>
+                    </div>
+                    <div class="cardProducto">
+                        <a href="#">
+                            <img src="https://picsum.photos/200?random=6" alt="Producto 2">
+                            <p>Producto 2</p>
+                            <p class="precio">$9999.99</p>
+                        </a>
+                    </div>
+                    <div class="cardProducto">
+                        <a href="#">
+                            <img src="https://picsum.photos/200?random=7" alt="Producto 3">
+                            <p>Producto 3</p>
+                            <p class="precio">$9999.99</p>
+                        </a>
+                    </div>
+                    <div class="cardProducto">
+                        <a href="#">
+                            <img src="https://picsum.photos/200?random=8" alt="Producto 4">
+                            <p>Producto 4</p>
+                            <p class="precio">$9999.99</p>
+                        </a>
+                    </div>
+                    <div class="cardProducto">
+                        <a href="#">
+                            <img src="https://picsum.photos/200?random=9" alt="Producto 5">
+                            <p>Producto 5</p>
+                            <p class="precio">$9999.99</p>
+                        </a>
+                    </div>
+                </section>
+            </main>
+        </div>
         <!-- Footer -->
-        <footer>
-            <hr>
-            <h3>Contacto</h3>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15299.25245645202!2d-58.49360352369156!3d-34.53585964617376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6cc77eb3961%3A0xee434cae937168d9!2sFlorida%2C%20Buenos%20Aires%20Province!5e0!3m2!1sen!2sar!4v1657232248923!5m2!1sen!2sar"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <ul>
-                <li>Calle Falsa 1234, Florida, Buenos Aires, Argentina</li>
-                <li><a href="tel://23923929210">+54 11 12345678</a></li>
-                <li>ventas@ventas.com</li>
-            </ul>
-            <div class="iconos">
-                <a href="#">
-                    <img src="resources/images/whatsapp.png" alt="Whatsapp">
-                </a>
-                <a href="#">
-                    <img src="resources/images/instagram.png" alt="Instagram">
-                </a>
-                <a href="#">
-                    <img src="resources/images/facebook.png" alt="Facebook">
-                </a>
-            </div>
-            <div class="derechos">
-                <img src="resources/images/ventas.png" alt="Logo">
-                <p>
-                    VENTAS Copyright © All rights reserved.
-                </p>
-            </div>
-        </footer>
-
+        <div class="gridFooter">
+            <footer>
+                <hr>
+                <h3>Contacto</h3>
+                <div class="contacto">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15299.25245645202!2d-58.49360352369156!3d-34.53585964617376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6cc77eb3961%3A0xee434cae937168d9!2sFlorida%2C%20Buenos%20Aires%20Province!5e0!3m2!1sen!2sar!4v1657232248923!5m2!1sen!2sar"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <ul>
+                        <li>Calle Falsa 1234, Florida, Buenos Aires, Argentina</li>
+                        <li><a href="tel://23923929210">+54 11 12345678</a></li>
+                        <li>ventas@ventas.com</li>
+                    </ul>
+                    <div class="iconos">
+                        <a href="#">
+                            <img src="resources/images/whatsapp.png" alt="Whatsapp">
+                        </a>
+                        <a href="#">
+                            <img src="resources/images/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="#">
+                            <img src="resources/images/facebook.png" alt="Facebook">
+                        </a>
+                    </div>
+                </div>
+                <div class="derechos">
+                    <img src="resources/images/ventas.png" alt="Logo">
+                    <p>
+                        VENTAS Copyright © All rights reserved.
+                    </p>
+                </div>
+            </footer>
+        </div>
     </div>
 </body>
 
