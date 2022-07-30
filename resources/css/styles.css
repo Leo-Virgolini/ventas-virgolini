@@ -195,12 +195,12 @@ nav {
     margin-bottom: 0.5%;
     font-size: 26px;
     font-weight: bold;
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     border-width: 3px;
     border-color: black;
     border-style: solid;
     background-color: #64c3b3;
-    padding: 0.5% 0.5% 0.3% 0.1%;
+    padding: 0.3% 0.3% 0.3% 0.1%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -218,7 +218,7 @@ nav {
 }
 
 .navegadorIzq {
-    width: 80%;
+    /* width: 80%; */
     display: flex;
     flex-direction: row;
     /* flex-wrap: wrap; */
@@ -228,14 +228,15 @@ nav {
 }
 
 .navegadorDer {
-    width: 20%;
+    /* width: 20%; */
     display: flex;
     flex-direction: row;
     /* flex-wrap: wrap; */
     justify-content: right;
     align-items: center;
     align-content: center;
-    /* margin-left: auto; */
+    margin-left: auto;
+    justify-content: space-evenly;
 }
 
 .navInicio,
@@ -251,6 +252,40 @@ nav {
     border-style: solid;
     background-color: #6475c3;
     text-decoration: none;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+  
+    padding: 0.3% 2% 0.3% 0.3%;
+}
+
+.navInicio i,
+.navCategorias i,
+.navProductos i,
+.navContacto i,
+.navCarrito i,
+.navLogin i {
+    padding-right: 5%;
+}
+
+.navCarrito {
+    padding-right: 3%;
+}
+
+.navCarrito span {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: rgb(2, 2, 2);
+    background-color: rgb(244, 224, 0);
+    font-weight: bold;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: rgb(1, 1, 1);
+    border-style: solid;
+    margin-left: 1%;
 }
 
 .navegador i {
@@ -264,6 +299,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    flex-wrap: nowrap;
     align-items: center;
     align-content: center;
 }
@@ -272,15 +308,19 @@ nav {
     border-width: 2px;
     border-radius: 10px;
     border-color: black;
-    padding: 10px;
+    padding: 0.5%;
     font-size: 17px;
     width: 60%;
     background: #f1f1f1;
 }
 
 .buscador button {
-    width: 10%;
-    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     background: #6475c3;
     color: white;
     font-size: 20px;
@@ -288,7 +328,12 @@ nav {
     border-radius: 10px;
     border-color: black;
     cursor: pointer;
+    padding: 0.5%;
     margin-left: 0.3%;
+}
+
+.buscador i {
+    padding-right: 5%;
 }
 
 main {
