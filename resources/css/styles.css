@@ -103,6 +103,31 @@
     }
 }
 
+/* Pulse */
+@-webkit-keyframes hvr-pulse {
+    25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    75% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+@keyframes hvr-pulse {
+    25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    75% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
 /* Reseteo */
 * {
     padding: 0;
@@ -177,10 +202,16 @@ header {
 }
 
 .logo h1 {
+    color: #000000;
     font-size: 100px;
     font-family: 'Acme', sans-serif;
     text-shadow: -1px 0 black, 0 7px black, 1px 0 black, 0 -1px black;
-    animation: color-change-3x 4s linear infinite alternate both, tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: color-change-3x 4s linear infinite alternate both;
+}
+
+.logo h1:hover {
+    animation-play-state: running;
+    animation: color-change-3x 4s linear infinite alternate both, hvr-pulse 2s linear infinite both;
 }
 
 /* Navegador */
@@ -210,7 +241,7 @@ nav {
     flex-wrap: wrap;
     justify-content: stretch;
     align-items: flex-start;
-  
+
 }
 
 .navegadorIzq {
