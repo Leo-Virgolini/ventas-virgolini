@@ -210,7 +210,6 @@ header {
 }
 
 .logo h1:hover {
-    animation-play-state: running;
     animation: color-change-3x 4s linear infinite alternate both, hvr-pulse 2s linear infinite both;
 }
 
