@@ -128,31 +128,6 @@
     }
 }
 
-/* Reseteo */
-* {
-    padding: 0;
-    margin: 0;
-    /*border-box incluye el borde, padding y entonces la caja mide realmente lo que nosotros le indicamos*/
-    box-sizing: border-box;
-}
-
-.container {
-    width: 100%;
-    display: grid;
-    /* grid-template-rows: 1fr 2fr 1fr; */
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
-    grid-template-rows: auto auto auto;
-    grid-template-columns: auto;
-    grid-row-gap: 1%;
-    justify-items: stretch;
-    align-items: stretch;
-    justify-content: stretch;
-    align-content: stretch;
-}
-
 body {
     min-height: 100vh;
     /* margin-left: 0.3%; */
@@ -160,14 +135,7 @@ body {
     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 
-.gridHeader {
-    width: 100%;
-    grid-area: header;
-    justify-self: stretch;
-    align-self: stretch;
-}
-
-header {
+/* header {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -175,19 +143,10 @@ header {
     justify-content: center;
     align-items: stretch;
     align-content: center;
-}
+} */
 
 /* Logo */
 .logo {
-    /* width: 100%; */
-    display: flex;
-    /* flex-wrap: wrap; */
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    /* margin: 0.3% 0% 0.5% 0.2%; */
-    /* border-radius: 25px; */
     background-color: #6475c3;
     border-width: 3px;
     border-color: black;
@@ -219,95 +178,51 @@ nav {
     font-size: 26px;
     font-weight: bold;
     font-family: 'Lato', sans-serif;
-    border-width: 3px;
-    border-color: black;
-    border-style: solid;
     background-color: #64c3b3;
-    padding: 0.5% 0.1% 0.5% 0.1%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    /* border-width: 3px;
+    border-color: black;
+    border-style: solid; */
+    /* padding: 0.5% 0.1% 0.5% 0.1%; */
 }
 
-.navegador {
-    width: 100%;
-    /* height: 40px; */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+.dropdown-menu.show {
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    background-color: #6475c3;
 }
 
-.navegadorIzq {
-    width: 70%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.navegadorDer {
-    width: 30%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    margin-left: auto;
-}
-
-.navInicio,
-.navCategorias,
-.navProductos,
-.navContacto,
-.navCarrito,
-.navLogin {
-    color: white;
+.nav-item {
+    /* color: white; */
     /* border-width: 2px; */
     border-radius: 10px;
     /* border-color: black; */
     /* border-style: solid; */
     background-color: #6475c3;
-    text-decoration: none;
-
+    /* text-decoration: none; */
+    /* 
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    align-content: center;
+    align-content: center; */
 
-    padding: 1%;
+    /* padding: 1%; */
     margin-right: 0.5%;
 
+
     /* width: 100%; */
-    height: 40px;
+    /* height: 40px; */
 }
 
-.navCarrito span {
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    color: rgb(2, 2, 2);
-    background-color: rgb(244, 224, 0);
-    font-weight: bold;
-    border-width: 2px;
-    border-radius: 5px;
-    border-color: rgb(1, 1, 1);
-    border-style: solid;
-    margin-left: 1%;
-    margin-right: 3%;
+.nav-item a {
+    /* padding-left: 1%; */
+    color: white;
 }
 
-.navegador i {
-    padding-right: 5%;
+i {
+    padding-right: 2%;
 }
 
 /* Icon Grow */
@@ -350,17 +265,17 @@ nav {
 }
 
 .buscador input {
-    width: 80%;
+    /* width: 70%; */
     border-width: 2px;
     border-radius: 10px;
-    border-color: black;
+    /* border-color: black; */
     padding: 0.5%;
     font-size: 20px;
     background: #f1f1f1;
 }
 
 .buscador button {
-    width: 20%;
+    /* width: 30%; */
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -372,7 +287,7 @@ nav {
     font-size: 20px;
     border-width: 2px;
     border-radius: 10px;
-    border-color: black;
+    /* border-color: black; */
     cursor: pointer;
     padding: 0.5%;
     margin-left: 0.3%;
@@ -389,17 +304,6 @@ main {
 }
 
 /* Ofertas */
-.ofertas {
-    margin-bottom: 1%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    /* width: 100%; */
-}
-
 .tituloOfertas {
     font-family: 'Alfa Slab One', cursive;
     font-size: 72px;
@@ -550,13 +454,6 @@ main {
 }
 
 /* Footer */
-.gridFooter {
-    grid-area: footer;
-    justify-self: stretch;
-    align-self: stretch;
-    width: 100%;
-}
-
 footer {
     display: flex;
     flex-direction: column;
@@ -645,11 +542,13 @@ footer h3 {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
+    align-content: center;
 }
 
 .derechos p {
     font-style: italic;
     color: rgb(28, 28, 28);
+    margin-bottom: 0%;
 }
 
 .derechos img {
@@ -911,101 +810,4 @@ textarea {
     border-width: 3px;
     border-color: black;
     border-style: solid;
-}
-
-/* MediaQuery */
-/* Mobile */
-@media screen and (max-width: 415px) {
-
-    .navegadorIzq {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navegadorDer {
-        flex-direction: column;
-        align-items: flex-end;
-    }
-
-    .navInicio,
-    .navCategorias,
-    .navProductos,
-    .navContacto,
-    .navCarrito,
-    .navLogin {
-        margin-bottom: 1%;
-        padding: 2%;
-    }
-
-    .buscador {
-        width: 100%;
-    }
-
-    .buscador input {
-        width: 65%;
-    }
-
-    .buscador button {
-        width: 35%;
-    }
-
-    footer {
-        justify-content: center;
-    }
-
-    .contacto {
-        justify-content: center;
-    }
-
-    footer li {
-        text-align: center;
-    }
-}
-
-/* Tablet */
-@media screen and (max-width: 900px) {
-
-    .navegadorIzq {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navegadorDer {
-        flex-direction: column;
-        align-items: flex-end;
-    }
-
-    .navInicio,
-    .navCategorias,
-    .navProductos,
-    .navContacto,
-    .navCarrito,
-    .navLogin {
-        margin-bottom: 1%;
-        padding: 2%;
-    }
-
-    .buscador {
-        width: 100%;
-    }
-
-    .buscador input {
-        width: 65%;
-    }
-
-    .buscador button {
-        width: 35%;
-    }
-
-    footer {
-        justify-content: center;
-    }
-
-    .contacto {
-        justify-content: center;
-    }
-
-    footer li {
-        text-align: center;
-    }
 }

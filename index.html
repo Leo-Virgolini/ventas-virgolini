@@ -7,61 +7,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="resources/favicon/venta.png">
     <link rel="stylesheet" href="resources/css/styles.css">
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/bda957b7e9.js" crossorigin="anonymous"></script>
     <title>Ventas™-Inicio</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="gridHeader">
-            <!-- Header -->
-            <header>
-                <!-- Logo -->
-                <a href="index.html" class="logo">
-                    <img src="resources/images/venta.png" alt="Logo" >
-                    <h1>VENTAS™</h1>
-                </a>
-                <!-- Navegador -->
-                <nav>
-                    <div class="navegador">
-                        <div class="navegadorIzq">
-                            <a href="index.html" class="navInicio hvr-icon-grow">
-                                <i class="fa-solid fa-house hvr-icon"></i>Inicio
-                            </a>
-                            <a href="#" class="navCategorias hvr-icon-grow">
-                                <i class="fa-solid fa-tags hvr-icon"></i>Categorías↓
-                            </a>
-                            <a href="pages/productos.html" class="navProductos hvr-icon-grow">
-                                <i class="fa-solid fa-basket-shopping hvr-icon"></i>Productos
-                            </a>
-                            <a href="pages/contacto.html" class="navContacto hvr-icon-grow">
-                                <i class="fa-solid fa-address-book hvr-icon"></i>Contacto
-                            </a>
-                        </div>
-                        <div class="navegadorDer">
-                            <a href="pages/carrito.html" class="navCarrito hvr-icon-grow">
-                                <i class="fa-solid fa-cart-shopping hvr-icon"></i>Carrito<span>2</span>
-                            </a>
-                            <a href="pages/login.html" class="navLogin hvr-icon-grow">
-                                <i class="fa-solid fa-right-to-bracket hvr-icon"></i>Login
-                            </a>
+    <div class="fluid-container">
+        <!-- Header -->
+        <header class="row d-flex justify-content-center align-items-center align-content-center ms-1">
+            <!-- Logo -->
+            <a href="index.html" class="logo d-flex justify-content-center align-items-center align-content-center">
+                <img src="resources/images/venta.png" alt="Logo">
+                <h1>VENTAS™</h1>
+            </a>
+            <!-- Navegador -->
+            <nav class="navbar navbar-expand-lg d-flex justify-content-center align-items-center">
+                <div class="container-fluid">
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="row collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul
+                            class="col-8 navbar-nav ps-2 me-auto mb-2 d-flex justify-content-start align-items-center mr-auto">
+                            <li class="nav-item">
+                                <a href="index.html"
+                                    class="nav-link hvr-icon-grow d-flex justify-content-center align-items-center"
+                                    aria-current="page">
+                                    <i class="fa-solid fa-house hvr-icon"></i>Inicio
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a href="#"
+                                    class="nav-link dropdown-toggle hvr-icon-grow d-flex justify-content-center align-items-center"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-tags hvr-icon"></i>Categorías
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Coctelería</a></li>
+                                    <li><a class="dropdown-item" href="#">Repostería</a></li>
+                                    <li><a class="dropdown-item" href="#">Maquinaria</a></li>
+                                    <li><a class="dropdown-item" href="#">Ollas y cacerolas</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="pages/productos.html"
+                                    class="nav-link hvr-icon-grow d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-basket-shopping hvr-icon"></i>Productos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="pages/contacto.html"
+                                    class="nav-link hvr-icon-grow d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-address-book hvr-icon"></i>Contacto
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="col-4 navbar-nav me-auto mb-2 d-flex justify-content-end align-items-center ml-auto">
+                            <li class="nav-item">
+                                <a href="pages/carrito.html"
+                                    class="nav-link hvr-icon-grow d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-cart-shopping hvr-icon"></i>Carrito<span
+                                        class="badge rounded-pill text-bg-warning">2</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="pages/login.html"
+                                    class="nav-link hvr-icon-grow d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-right-to-bracket hvr-icon"></i>Login
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- Buscador -->
+                        <div class="col-12">
+                            <form class="d-flex justify-content-start align-items-center buscador" role="search">
+                                <input class="form-control me-2" type="search" aria-label="Search" name="buscar"
+                                    placeholder="Ej: Ollas" required autofocus>
+                                <button type="submit"
+                                    class="btn btn-primary col-3 d-flex justify-content-center align-items-center ">
+                                    <i class="fa-solid fa-magnifying-glass hvr-icon-grow hvr-icon"></i>
+                                    Buscar
+                                </button>
+                            </form>
                         </div>
                     </div>
-                    <!-- Buscador -->
-                    <div class="buscador hvr-icon-grow">
-                        <input type="search" name="buscar" id="buscar" placeholder="Buscar" required autofocus>
-                        <button type="submit"><i class="fa-solid fa-magnifying-glass hvr-icon"></i>Buscar</button>
-                    </div>
-                </nav>
-            </header>
-        </div>
+                </div>
+            </nav>
+
+        </header>
+
         <!-- Main -->
-        <div clas="gridMain">
+        <div clas="row">
             <main>
                 <!-- Carrousel de imágenes con ofertas -->
                 <section class="ofertas">
                     <h2 class="tituloOfertas">OFERTAS</h2>
-                    <img src="./resources/images/ofertas.png" alt="Ofertas">
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./resources/images/ofertas.png" class="d-block w-100" alt="Oferta 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./resources/images/ofertas.png" class="d-block w-100" alt="Oferta 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./resources/images/ofertas.png" class="d-block w-100" alt="Oferta 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
                 </section>
                 <!-- Categorías -->
                 <section class="categorias">
@@ -136,7 +216,7 @@
             </main>
         </div>
         <!-- Footer -->
-        <div class="gridFooter">
+        <div class="row">
             <footer>
                 <hr>
                 <h3>Contacto</h3>
@@ -171,6 +251,7 @@
             </footer>
         </div>
     </div>
+    <script src="resources/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
