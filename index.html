@@ -13,242 +13,303 @@
 </head>
 
 <body>
-    <div class="fluid-container">
+    <div class="container-fluid">
         <!-- Header -->
-        <header class="row d-flex justify-content-center align-items-center align-content-center ms-1">
-            <!-- Logo -->
-            <a href="index.html" class="logo d-flex justify-content-center align-items-center align-content-center">
-                <img src="resources/images/venta.png" alt="Logo">
-                <h1>VENTAS™</h1>
-            </a>
-            <!-- Navegador -->
-            <nav class="navbar navbar-expand-lg d-flex justify-content-center align-items-center">
-                <div class="container-fluid">
-                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="row collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul
-                            class="col-8 navbar-nav ps-2 me-auto mb-2 d-flex justify-content-start align-items-center mr-auto">
-                            <li class="nav-item">
-                                <a href="index.html"
-                                    class="nav-link hvr-icon-grow d-flex justify-content-center align-items-center"
-                                    aria-current="page">
-                                    <i class="fa-solid fa-house hvr-icon"></i>Inicio
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown ">
-                                <a href="#"
-                                    class="nav-link dropdown-toggle hvr-icon-grow d-flex justify-content-center align-items-center"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa-solid fa-tags hvr-icon"></i>Categorías
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Coctelería</a></li>
-                                    <li><a class="dropdown-item" href="#">Repostería</a></li>
-                                    <li><a class="dropdown-item" href="#">Maquinaria</a></li>
-                                    <li><a class="dropdown-item" href="#">Ollas y cacerolas</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/productos.html"
-                                    class="nav-link hvr-icon-grow d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-basket-shopping hvr-icon"></i>Productos
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/contacto.html"
-                                    class="nav-link hvr-icon-grow d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-address-book hvr-icon"></i>Contacto
-                                </a>
-                            </li>
-                        </ul>
-
-                        <ul class="col-4 navbar-nav me-auto mb-2 d-flex justify-content-end align-items-center ml-auto">
-                            <li class="nav-item">
-                                <a href="pages/carrito.html"
-                                    class="nav-link hvr-icon-grow d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-cart-shopping hvr-icon"></i>Carrito<span
-                                        class="badge rounded-pill text-bg-warning">2</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="pages/login.html"
-                                    class="nav-link hvr-icon-grow d-flex justify-content-center align-items-center">
-                                    <i class="fa-solid fa-right-to-bracket hvr-icon"></i>Login
-                                </a>
-                            </li>
-                        </ul>
-                        <!-- Buscador -->
-                        <div class="col-12">
-                            <form class="d-flex justify-content-start align-items-center buscador" role="search">
-                                <input class="form-control me-2" type="search" aria-label="Search" name="buscar"
-                                    placeholder="Ej: Ollas" required autofocus>
-                                <button type="submit"
-                                    class="btn btn-primary col-3 d-flex justify-content-center align-items-center ">
-                                    <i class="fa-solid fa-magnifying-glass hvr-icon-grow hvr-icon"></i>
-                                    Buscar
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Logo -->
+                        <a href="index.html" class="logo d-flex justify-content-center align-items-center align-content-center w-100">
+                            <img src="resources/images/venta.png" alt="Logo">
+                            <h1>VENTAS™</h1>
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <!-- Navegador -->
+                        <nav class="navbar navbar-expand-lg d-flex justify-content-center align-items-center">
+                            <div class="container-fluid">
+                                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                                <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
                                 </button>
-                            </form>
-                        </div>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <ul class="navbar-nav me-auto mb-2 d-flex justify-content-start mr-auto">
+                                                    <li class="nav-item mb-2">
+                                                        <a href="index.html" class="nav-link hvr-icon-grow d-flex justify-content-center align-items-center" aria-current="page">
+                                                            <i class="fa-solid fa-house hvr-icon"></i>Inicio
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item dropdown mb-2">
+                                                        <a href="#" class="nav-link dropdown-toggle hvr-icon-grow d-flex justify-content-center align-items-center" role="button"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fa-solid fa-tags hvr-icon"></i>Categorías
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">Coctelería</a></li>
+                                                            <li><a class="dropdown-item" href="#">Repostería</a></li>
+                                                            <li><a class="dropdown-item" href="#">Maquinaria</a></li>
+                                                            <li><a class="dropdown-item" href="#">Horno</a></li>
+                                                            <li><a class="dropdown-item" href="#">Ollas y cacerolas</a></li>
+                                                            <li><a class="dropdown-item" href="#">Infusiones</a></li>
+                                                            <li><a class="dropdown-item" href="#">Parrilla</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="nav-item mb-2">
+                                                        <a href="pages/productos.html" class="nav-link hvr-icon-grow d-flex justify-content-center align-items-center">
+                                                            <i class="fa-solid fa-basket-shopping hvr-icon"></i>Productos
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item mb-2">
+                                                        <a href="pages/contacto.html" class="nav-link hvr-icon-grow d-flex justify-content-center align-items-center">
+                                                            <i class="fa-solid fa-address-book hvr-icon"></i>Contacto
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-4">
+                                                <ul class="navbar-nav me-auto mb-2 d-flex justify-content-end ml-auto">
+                                                    <li class="nav-item mb-2">
+                                                        <a href="pages/carrito.html" class="nav-link hvr-icon-grow d-flex justify-content-center align-items-center">
+                                                            <i class="fa-solid fa-cart-shopping hvr-icon"></i>Carrito<span class="badge rounded-pill text-bg-warning">2</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item mb-2">
+                                                        <a href="pages/login.html" class="nav-link hvr-icon-grow d-flex justify-content-center align-items-center">
+                                                            <i class="fa-solid fa-right-to-bracket hvr-icon"></i>Login
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- Buscador -->
+                                            <div class="col-12">
+                                                <form class="d-flex justify-content-start align-items-center buscador" role="search">
+                                                    <input class="form-control me-2" type="search" aria-label="Search" name="buscar" placeholder="Ej: Ollas" required autofocus>
+                                                    <button type="submit" class="btn btn-primary col-3 d-flex justify-content-center align-items-center hvr-icon-grow">
+                                                        <i class="fa-solid fa-magnifying-glass hvr-icon"></i>
+                                                        Buscar
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
                     </div>
                 </div>
-            </nav>
-
+            </div>
         </header>
 
         <!-- Main -->
-        <div clas="row">
-            <main>
+        <div class="row">
+            <main class="col-12">
                 <!-- Carrousel de imágenes con ofertas -->
-                <section class="ofertas">
+                <section class="ofertas mt-3">
                     <h2 class="tituloOfertas">OFERTAS</h2>
-
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="./resources/images/ofertas.png" class="d-block w-100" alt="Oferta 1">
+                                <img src="./resources/images/ofertas1.png" class="d-block w-100" alt="Oferta 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="./resources/images/ofertas.png" class="d-block w-100" alt="Oferta 2">
+                                <img src="./resources/images/ofertas2.png" class="d-block w-100" alt="Oferta 2">
                             </div>
                             <div class="carousel-item">
-                                <img src="./resources/images/ofertas.png" class="d-block w-100" alt="Oferta 3">
+                                <img src="./resources/images/ofertas3.png" class="d-block w-100" alt="Oferta 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./resources/images/ofertas4.png" class="d-block w-100" alt="Oferta 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./resources/images/ofertas5.png" class="d-block w-100" alt="Oferta 5">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Anterior</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Siguiente</span>
                         </button>
                     </div>
                 </section>
                 <!-- Categorías -->
-                <section class="categorias">
+                <section class="categorias mt-4 d-flex justify-content-evenly align-items-center flex-wrap">
                     <div class="cardCategoria">
-                        <a href="#">
+                        <a href="#" class="d-flex flex-column justify-content-center align-items-center">
                             <p>Coctelería</p>
-                            <img src="./resources/images/categoria1.png" alt="Coctelería">
+                            <img src="./resources/images/categoria1.png" class="d-block w-75" alt="Coctelería">
                         </a>
                         <hr>
                     </div>
                     <div class="cardCategoria">
-                        <a href="#">
+                        <a href="#" class="d-flex flex-column justify-content-center align-items-center">
                             <p>Repostería</p>
-                            <img src="./resources/images/categoria2.png" alt="Repostería">
+                            <img src="./resources/images/categoria2.png" class="d-block w-75" alt="Repostería">
                         </a>
                         <hr>
                     </div>
                     <div class="cardCategoria">
-                        <a href="#">
+                        <a href="#" class="d-flex flex-column justify-content-center align-items-center">
                             <p>Maquinaria</p>
-                            <img src="./resources/images/categoria3.png" alt="Maquinaria">
+                            <img src="./resources/images/categoria3.png" class="d-block w-75" alt="Maquinaria">
                         </a>
                         <hr>
                     </div>
                     <div class="cardCategoria">
-                        <a href="#">
+                        <a href="#" class="d-flex flex-column justify-content-center align-items-center">
                             <p>Ollas y cacerolas</p>
-                            <img src="./resources/images/categoria4.png" alt="Ollas y cacerolas">
+                            <img src="./resources/images/categoria4.png" class="d-block w-75" alt="Ollas y cacerolas">
                         </a>
                         <hr>
                     </div>
                 </section>
+
                 <!-- Listado de productos -->
-                <h2 class="tituloNovedades">NOVEDADES</h2> <!-- adentro de la section? -->
-                <section class="productos">
-                    <div class="cardProducto">
-                        <a href="#">
-                            <img src="./resources/images/productos/1.png" alt="Producto 1">
-                            <p>Producto 1</p>
-                            <p class="precio">$9999.99</p>
-                        </a>
-                    </div>
-                    <div class="cardProducto">
-                        <a href="#">
-                            <img src="./resources/images/productos/2.png" alt="Producto 2">
-                            <p>Producto 2</p>
-                            <p class="precio">$9999.99</p>
-                        </a>
-                    </div>
-                    <div class="cardProducto">
-                        <a href="#">
-                            <img src="./resources/images/productos/3.png" alt="Producto 3">
-                            <p>Producto 3</p>
-                            <p class="precio">$9999.99</p>
-                        </a>
-                    </div>
-                    <div class="cardProducto">
-                        <a href="#">
-                            <img src="./resources/images/productos/4.png" alt="Producto 4">
-                            <p>Producto 4</p>
-                            <p class="precio">$9999.99</p>
-                        </a>
-                    </div>
-                    <div class="cardProducto">
-                        <a href="#">
-                            <img src="./resources/images/productos/5.png" alt="Producto 5">
-                            <p>Producto 5</p>
-                            <p class="precio">$9999.99</p>
-                        </a>
+                <section class="productos mt-3">
+                    <h2 class="tituloNovedades">NOVEDADES</h2>
+                    <div class="row row-cols-1 row-cols-4 g-4">
+                        <div class="col">
+                            <div class="card cardProducto d-flex justify-content-center align-items-center">
+                                <a href="#">
+                                    <img src="./resources/images/productos/1.png" alt="Producto 1" class="card-img-top w-100">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title precio text-success">$9999.99</h5>
+                                    <p class="card-text text-center">Producto 1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardProducto d-flex justify-content-center align-items-center">
+                                <a href="#">
+                                    <img src="./resources/images/productos/2.png" alt="Producto 2" class="card-img-top  w-100">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title precio text-success">$9999.99</h5>
+                                    <p class="card-text text-center">Producto 2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardProducto d-flex justify-content-center align-items-center">
+                                <a href="#">
+                                    <img src="./resources/images/productos/3.png" alt="Producto 3" class="card-img-top w-100">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title precio text-success">$9999.99</h5>
+                                    <p class="card-text text-center">Producto 3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardProducto d-flex justify-content-center align-items-center">
+                                <a href="#">
+                                    <img src="./resources/images/productos/4.png" alt="Producto 4" class="card-img-top w-100">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title precio text-success">$9999.99</h5>
+                                    <p class="card-text text-center">Producto 4</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardProducto d-flex justify-content-center align-items-center">
+                                <a href="#">
+                                    <img src="./resources/images/productos/5.png" alt="Producto 5" class="card-img-top w-100">
+                                </a>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title precio text-success">$9999.99</h5>
+                                    <p class="card-text">Producto 5</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardProducto d-flex justify-content-center align-items-center">
+                                <a href="#">
+                                    <img src="./resources/images/productos/6.png" alt="Producto 6" class="card-img-top w-100">
+                                </a>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title precio text-success">$9999.99</h5>
+                                    <p class="card-text">Producto 6</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardProducto d-flex justify-content-center align-items-center">
+                                <a href="#">
+                                    <img src="./resources/images/productos/7.png" alt="Producto 7" class="card-img-top w-100">
+                                </a>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title precio text-success">$9999.99</h5>
+                                    <p class="card-text">Producto 7</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardProducto d-flex justify-content-center align-items-center">
+                                <a href="#">
+                                    <img src="./resources/images/productos/8.png" alt="Producto 8" class="card-img-top w-100">
+                                </a>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title precio text-success">$9999.99</h5>
+                                    <p class="card-text">Producto 8</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
         </div>
         <!-- Footer -->
         <div class="row">
-            <footer>
-                <hr>
-                <h3>Contacto</h3>
-                <div class="contacto">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15299.25245645202!2d-58.49360352369156!3d-34.53585964617376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6cc77eb3961%3A0xee434cae937168d9!2sFlorida%2C%20Buenos%20Aires%20Province!5e0!3m2!1sen!2sar!4v1657232248923!5m2!1sen!2sar"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                    <ul>
-                        <li>Calle Falsa 1234, Florida, Buenos Aires, Argentina</li>
-                        <li><a href="tel://23923929210">+54 11 12345678</a></li>
-                        <li>ventas@ventas.com</li>
-                    </ul>
-                    <div class="iconos">
-                        <a href="#">
-                            <img src="resources/images/whatsapp.png" alt="Whatsapp">
-                        </a>
-                        <a href="#">
-                            <img src="resources/images/instagram.png" alt="Instagram">
-                        </a>
-                        <a href="#">
-                            <img src="resources/images/facebook.png" alt="Facebook">
-                        </a>
+            <div class="col-12">
+                <footer>
+                    <hr>
+                    <h3>Contacto</h3>
+                    <div class="contacto">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15299.25245645202!2d-58.49360352369156!3d-34.53585964617376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6cc77eb3961%3A0xee434cae937168d9!2sFlorida%2C%20Buenos%20Aires%20Province!5e0!3m2!1sen!2sar!4v1657232248923!5m2!1sen!2sar"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <ul>
+                            <li>Calle Falsa 1234, Florida, Buenos Aires, Argentina</li>
+                            <li><a href="tel://23923929210">+54 11 12345678</a></li>
+                            <li>ventas@ventas.com</li>
+                        </ul>
+                        <div class="iconos">
+                            <a href="#">
+                                <img src="resources/images/whatsapp.png" alt="Whatsapp">
+                            </a>
+                            <a href="#">
+                                <img src="resources/images/instagram.png" alt="Instagram">
+                            </a>
+                            <a href="#">
+                                <img src="resources/images/facebook.png" alt="Facebook">
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="derechos">
-                    <img src="resources/images/ventas.png" alt="Logo">
-                    <p>
-                        VENTAS Copyright © All rights reserved.
-                    </p>
-                </div>
-            </footer>
+                    <div class="derechos">
+                        <img src="resources/images/ventas.png" alt="Logo">
+                        <p>
+                            VENTAS Copyright © All rights reserved.
+                        </p>
+                    </div>
+                </footer>
+            </div>
         </div>
     </div>
     <script src="resources/js/bootstrap.bundle.min.js"></script>
