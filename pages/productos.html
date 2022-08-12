@@ -25,6 +25,8 @@
                             <h1>VENTAS™</h1>
                         </a>
                     </div>
+                </div>
+                <div class="row">
                     <div class="col-12">
                         <!-- Navegador -->
                         <nav class="navbar navbar-expand-lg d-flex justify-content-center align-items-center">
@@ -37,8 +39,8 @@
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <div class="container-fluid">
                                         <div class="row">
-                                            <div class="col-8">
-                                                <ul class="navbar-nav me-auto mb-2 d-flex justify-content-start mr-auto">
+                                            <div class="col-8 me-auto">
+                                                <ul class="navbar-nav me-auto mb-2 d-flex justify-content-start">
                                                     <li class="nav-item mb-2">
                                                         <a href="../index.html" class="nav-link hvr-icon-grow d-flex justify-content-center align-items-center" aria-current="page">
                                                             <i class="fa-solid fa-house hvr-icon"></i>Inicio
@@ -71,8 +73,8 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div class="col-4">
-                                                <ul class="navbar-nav me-auto mb-2 d-flex justify-content-end ml-auto">
+                                            <div class="col-4 ms-auto">
+                                                <ul class="navbar-nav me-auto mb-2 d-flex justify-content-end">
                                                     <li class="nav-item mb-2">
                                                         <a href="carrito.html" class="nav-link hvr-icon-grow d-flex justify-content-center align-items-center">
                                                             <i class="fa-solid fa-cart-shopping hvr-icon"></i>Carrito<span class="badge rounded-pill text-bg-warning">2</span>
@@ -105,219 +107,242 @@
             </div>
         </header>
 
-
-
         <main>
-            <!-- Listado de productos -->
             <section class="productos mt-3">
-                <h2 class="tituloNovedades">PRODUCTOS</h2>
-                <!-- Filtrar y ordenar -->
-                <div class="btn-group">
-                    <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Filtrar
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Categoría 1</a></li>
-                        <li><a class="dropdown-item" href="#">Categoría 2</a></li>
-                        <li><a class="dropdown-item" href="#">Categoría 3</a></li>
-                        <li><a class="dropdown-item" href="#">Categoría 4</a></li>
-                    </ul>
+                <div class="container-fluid">
+                    <h2 class="tituloNovedades">PRODUCTOS</h2>
+                    <!-- Filtrar y ordenar -->
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <div class="btn-group">
+                                <button class="btn btn-light btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Filtrar
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Coctelería</a></li>
+                                    <li><a class="dropdown-item" href="#">Repostería</a></li>
+                                    <li><a class="dropdown-item" href="#">Maquinaria</a></li>
+                                    <li><a class="dropdown-item" href="#">Horno</a></li>
+                                    <li><a class="dropdown-item" href="#">Ollas y cacerolas</a></li>
+                                    <li><a class="dropdown-item" href="#">Infusiones</a></li>
+                                    <li><a class="dropdown-item" href="#">Parrilla</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group">
+                                <button class="btn btn-light btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Ordenar
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Relevante</a></li>
+                                    <li><a class="dropdown-item" href="#">Menor precio</a></li>
+                                    <li><a class="dropdown-item" href="#">Mayor precio</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cards de Productos -->
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+                        <div class="col">
+                            <div class="card cardProducto d-flex justify-content-center align-items-center">
+                                <a href="#">
+                                    <img src="../resources/images/productos/1.png" alt="Producto 1" class="card-img-top w-100">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title precio text-success">$9999.99</h5>
+                                    <p class="card-text text-center">Producto 1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardProducto d-flex justify-content-center align-items-center">
+                                <a href="#">
+                                    <img src="../resources/images/productos/2.png" alt="Producto 2" class="card-img-top w-100">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title precio text-success">$9999.99</h5>
+                                    <p class="card-text text-center">Producto 2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardProducto d-flex justify-content-center align-items-center">
+                                <a href="#">
+                                    <img src="../resources/images/productos/3.png" alt="Producto 3" class="card-img-top w-100">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title precio text-success">$9999.99</h5>
+                                    <p class="card-text text-center">Producto 3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardProducto d-flex justify-content-center align-items-center">
+                                <a href="#">
+                                    <img src="../resources/images/productos/4.png" alt="Producto 4" class="card-img-top w-100">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title precio text-success">$9999.99</h5>
+                                    <p class="card-text text-center">Producto 4</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardProducto d-flex justify-content-center align-items-center">
+                                <a href="#">
+                                    <img src="../resources/images/productos/5.png" alt="Producto 5" class="card-img-top w-100">
+                                </a>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title precio text-success">$9999.99</h5>
+                                    <p class="card-text">Producto 5</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardProducto d-flex justify-content-center align-items-center">
+                                <a href="#">
+                                    <img src="../resources/images/productos/6.png" alt="Producto 6" class="card-img-top w-100">
+                                </a>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title precio text-success">$9999.99</h5>
+                                    <p class="card-text">Producto 6</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardProducto d-flex justify-content-center align-items-center">
+                                <a href="#">
+                                    <img src="../resources/images/productos/7.png" alt="Producto 7" class="card-img-top w-100">
+                                </a>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title precio text-success">$9999.99</h5>
+                                    <p class="card-text">Producto 7</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardProducto d-flex justify-content-center align-items-center">
+                                <a href="#">
+                                    <img src="../resources/images/productos/8.png" alt="Producto 8" class="card-img-top w-100">
+                                </a>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title precio text-success">$9999.99</h5>
+                                    <p class="card-text">Producto 8</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardProducto d-flex justify-content-center align-items-center">
+                                <a href="#">
+                                    <img src="../resources/images/productos/9.png" alt="Producto 9" class="card-img-top w-100">
+                                </a>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title precio text-success">$9999.99</h5>
+                                    <p class="card-text">Producto 9</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardProducto d-flex justify-content-center align-items-center">
+                                <a href="#">
+                                    <img src="../resources/images/productos/10.png" alt="Producto 10" class="card-img-top w-100">
+                                </a>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title precio text-success">$9999.99</h5>
+                                    <p class="card-text">Producto 10</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardProducto d-flex justify-content-center align-items-center">
+                                <a href="#">
+                                    <img src="../resources/images/productos/11.png" alt="Producto 11" class="card-img-top w-100">
+                                </a>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title precio text-success">$9999.99</h5>
+                                    <p class="card-text">Producto 11</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardProducto d-flex justify-content-center align-items-center">
+                                <a href="#">
+                                    <img src="../resources/images/productos/12.png" alt="Producto 12" class="card-img-top w-100">
+                                </a>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title precio text-success">$9999.99</h5>
+                                    <p class="card-text">Producto 12</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Paginacion -->
+                    <div class="row">
+                        <div class="col-12">
+                            <nav aria-label="Paginacion">
+                                <ul class="pagination pagination-lg justify-content-center d-flex flex-row justify-content-center align-content-center flex-wrap">
+                                    <li class="page-item disabled">
+                                        <a class="page-link">Anterior</a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Siguiente</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
-                <div class="btn-group">
-                    <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Ordenar
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Relevante</a></li>
-                        <li><a class="dropdown-item" href="#">Menor precio</a></li>
-                        <li><a class="dropdown-item" href="#">Mayor precio</a></li>
-                    </ul>
-                </div>
-                <!-- Cards -->
-                <div class="row row-cols-1 row-cols-4 g-4 mt-2">
-                    <div class="col">
-                        <div class="card cardProducto d-flex justify-content-center align-items-center">
-                            <a href="#">
-                                <img src="../resources/images/productos/1.png" alt="Producto 1" class="card-img-top w-100">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title precio text-success">$9999.99</h5>
-                                <p class="card-text text-center">Producto 1</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card cardProducto d-flex justify-content-center align-items-center">
-                            <a href="#">
-                                <img src="../resources/images/productos/2.png" alt="Producto 2" class="card-img-top  w-100">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title precio text-success">$9999.99</h5>
-                                <p class="card-text text-center">Producto 2</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card cardProducto d-flex justify-content-center align-items-center">
-                            <a href="#">
-                                <img src="../resources/images/productos/3.png" alt="Producto 3" class="card-img-top w-100">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title precio text-success">$9999.99</h5>
-                                <p class="card-text text-center">Producto 3</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card cardProducto d-flex justify-content-center align-items-center">
-                            <a href="#">
-                                <img src="../resources/images/productos/4.png" alt="Producto 4" class="card-img-top w-100">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title precio text-success">$9999.99</h5>
-                                <p class="card-text text-center">Producto 4</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card cardProducto d-flex justify-content-center align-items-center">
-                            <a href="#">
-                                <img src="../resources/images/productos/5.png" alt="Producto 5" class="card-img-top w-100">
-                            </a>
-                            <div class="card-body text-center">
-                                <h5 class="card-title precio text-success">$9999.99</h5>
-                                <p class="card-text">Producto 5</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card cardProducto d-flex justify-content-center align-items-center">
-                            <a href="#">
-                                <img src="../resources/images/productos/6.png" alt="Producto 6" class="card-img-top w-100">
-                            </a>
-                            <div class="card-body text-center">
-                                <h5 class="card-title precio text-success">$9999.99</h5>
-                                <p class="card-text">Producto 6</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card cardProducto d-flex justify-content-center align-items-center">
-                            <a href="#">
-                                <img src="../resources/images/productos/7.png" alt="Producto 7" class="card-img-top w-100">
-                            </a>
-                            <div class="card-body text-center">
-                                <h5 class="card-title precio text-success">$9999.99</h5>
-                                <p class="card-text">Producto 7</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card cardProducto d-flex justify-content-center align-items-center">
-                            <a href="#">
-                                <img src="../resources/images/productos/8.png" alt="Producto 8" class="card-img-top w-100">
-                            </a>
-                            <div class="card-body text-center">
-                                <h5 class="card-title precio text-success">$9999.99</h5>
-                                <p class="card-text">Producto 8</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card cardProducto d-flex justify-content-center align-items-center">
-                            <a href="#">
-                                <img src="../resources/images/productos/9.png" alt="Producto 9" class="card-img-top w-100">
-                            </a>
-                            <div class="card-body text-center">
-                                <h5 class="card-title precio text-success">$9999.99</h5>
-                                <p class="card-text">Producto 9</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card cardProducto d-flex justify-content-center align-items-center">
-                            <a href="#">
-                                <img src="../resources/images/productos/10.png" alt="Producto 10" class="card-img-top w-100">
-                            </a>
-                            <div class="card-body text-center">
-                                <h5 class="card-title precio text-success">$9999.99</h5>
-                                <p class="card-text">Producto 10</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card cardProducto d-flex justify-content-center align-items-center">
-                            <a href="#">
-                                <img src="../resources/images/productos/11.png" alt="Producto 11" class="card-img-top w-100">
-                            </a>
-                            <div class="card-body text-center">
-                                <h5 class="card-title precio text-success">$9999.99</h5>
-                                <p class="card-text">Producto 11</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card cardProducto d-flex justify-content-center align-items-center">
-                            <a href="#">
-                                <img src="../resources/images/productos/12.png" alt="Producto 12" class="card-img-top w-100">
-                            </a>
-                            <div class="card-body text-center">
-                                <h5 class="card-title precio text-success">$9999.99</h5>
-                                <p class="card-text">Producto 12</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Paginacion -->
-            <nav aria-label="Paginacion">
-                <ul class="pagination pagination-lg justify-content-center">
-                    <li class="page-item disabled">
-                        <a class="page-link">Anterior</a>
-                    </li>
-                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">Siguiente</a>
-                    </li>
-                </ul>
-            </nav>
             </section>
         </main>
         <!-- Footer -->
         <div class="row">
             <div class="col-12">
-                <footer>
+                <footer class="d-flex flex-column justify-content-start">
                     <hr>
                     <h3>Contacto</h3>
-                    <div class="contacto">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15299.25245645202!2d-58.49360352369156!3d-34.53585964617376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6cc77eb3961%3A0xee434cae937168d9!2sFlorida%2C%20Buenos%20Aires%20Province!5e0!3m2!1sen!2sar!4v1657232248923!5m2!1sen!2sar"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                        <ul>
-                            <li>Calle Falsa 1234, Florida, Buenos Aires, Argentina</li>
-                            <li><a href="tel://23923929210">+54 11 12345678</a></li>
-                            <li>ventas@ventas.com</li>
-                        </ul>
-                        <div class="iconos">
-                            <a href="#">
-                                <img src="../resources/images/whatsapp.png" alt="Whatsapp">
-                            </a>
-                            <a href="#">
-                                <img src="../resources/images/instagram.png" alt="Instagram">
-                            </a>
-                            <a href="#">
-                                <img src="../resources/images/facebook.png" alt="Facebook">
-                            </a>
+                    <div class="contacto d-flex flex-row flex-wrap justify-content-start align-items-start align-content-center">
+                        <div class="container-fluid">
+                            <div class="row justify-content-start align-items-center align-content-center">
+                                <div class="col-sm-12 col-md-auto">
+                                    <iframe class="w-100"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15299.25245645202!2d-58.49360352369156!3d-34.53585964617376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6cc77eb3961%3A0xee434cae937168d9!2sFlorida%2C%20Buenos%20Aires%20Province!5e0!3m2!1sen!2sar!4v1657232248923!5m2!1sen!2sar"
+                                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                    </iframe>
+                                </div>
+                                <div class="col-sm-12 col-md-auto">
+                                    <ul class="me-auto">
+                                        <li>Calle Falsa 1234, Florida, Buenos Aires, Argentina</li>
+                                        <li><a href="tel://23923929210">+54 11 12345678</a></li>
+                                        <li>ventas@ventas.com</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-12 col-md-auto">
+                                    <div class="iconos d-flex flex-row justify-content-start align-items-center align-content-center">
+                                        <a href="#">
+                                            <img class="w-100 h-100 pe-3" src="../resources/images/whatsapp.png" alt="Whatsapp">
+                                        </a>
+                                        <a href="#">
+                                            <img class="w-100 h-100 pe-3" src="../resources/images/instagram.png" alt="Instagram">
+                                        </a>
+                                        <a href="#">
+                                            <img class="w-100 h-100 pe-3" src="../resources/images/facebook.png" alt="Facebook">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="derechos d-flex flex-row flex-wrap justify-content-start align-items-center align-content-center">
+                                        <img src="../resources/images/ventas.png" alt="Logo">
+                                        <p>
+                                            VENTAS Copyright © All rights reserved.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="derechos">
-                        <img src="../resources/images/ventas.png" alt="Logo">
-                        <p>
-                            VENTAS Copyright © All rights reserved.
-                        </p>
                     </div>
                 </footer>
             </div>
