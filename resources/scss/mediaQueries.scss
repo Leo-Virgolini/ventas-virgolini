@@ -1,0 +1,94 @@
+/* MediaQuery */
+@media screen and (max-width: 650px) {
+    .logo h1 {
+        font-size: 4.5rem;
+    }
+
+    .logo img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .tituloOfertas {
+        font-size: 4rem;
+    }
+
+    .tituloNovedades {
+        font-size: 4rem;
+    }
+
+    .navbar {
+        font-size: 1rem;
+
+    }
+
+    .navbar .dropdown-menu.show {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 530px) {
+    .contacto ul {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .logo h1 {
+        font-size: 4rem;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .tituloOfertas {
+        font-size: 3rem;
+    }
+
+    .tituloNovedades {
+        font-size: 3rem;
+    }
+
+    .navbar {
+        font-size: 0.8rem;
+
+    }
+
+    .navbar .dropdown-menu.show {
+        font-size: 0.8rem;
+    }
+
+    .buscador input {
+        font-size: 0.8rem;
+    }
+
+    .buscador button {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .logo h1 {
+        font-size: 3rem;
+    }
+
+    .navbar {
+        font-size: 0.6rem;
+
+    }
+
+    .navbar .dropdown-menu.show {
+        font-size: 0.6rem;
+    }
+
+    .buscador input {
+        font-size: 0.6rem;
+    }
+
+    .buscador button {
+        font-size: 0.6rem;
+    }
+}
