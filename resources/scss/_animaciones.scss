@@ -47,15 +47,15 @@
 
 @keyframes color-change-3x {
     0% {
-        color: #64c3b3;
+        color: $colorVerde;
     }
 
     50% {
-        color: #e0c645;
+        color: $colorAmarillo;
     }
 
     100% {
-        color: #e274ac;
+        color: $colorRosa;
     }
 }
 
