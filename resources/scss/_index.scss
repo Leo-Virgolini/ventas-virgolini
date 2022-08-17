@@ -64,6 +64,12 @@ body {
                         color: rgb(59, 111, 207);
                     }
                 }
+
+                &:hover {
+                    background-color: whitesmoke;
+                    color: rgb(59, 111, 207);
+                }
+
             }
 
             .navbar-toggler {
@@ -134,7 +140,7 @@ body {
         /* border-width: 3px;
         border-color: black;
         border-style: solid; */
-        height: 500px;
+        max-height: 600px;
         animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
 }
@@ -214,8 +220,8 @@ body {
             border-color: rgb(20, 28, 36);
             border-style: solid; */
             border-radius: 10px;
-            width: 300px;
-            height: 300px;
+            // width: 300px;
+            // height: 300px;
             animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         }
 

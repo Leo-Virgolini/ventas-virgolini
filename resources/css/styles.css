@@ -121,6 +121,9 @@ body {
           color: whitesmoke; }
           body header .navegador .nav-item a:hover {
             color: #3b6fcf; }
+        body header .navegador .nav-item:hover {
+          background-color: whitesmoke;
+          color: #3b6fcf; }
       body header .navegador .navbar-toggler {
         background-color: #6475c3;
         border-radius: 10px;
@@ -170,7 +173,7 @@ body {
   /* border-width: 3px;
         border-color: black;
         border-style: solid; */
-  height: 500px;
+  max-height: 600px;
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
 
 /* Categorías */
@@ -226,8 +229,6 @@ body {
             border-color: rgb(20, 28, 36);
             border-style: solid; */
     border-radius: 10px;
-    width: 300px;
-    height: 300px;
     animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
   .productos .cardProducto .precio {
     font-size: 1.7rem; }
@@ -281,8 +282,8 @@ footer {
     font-size: 4rem; }
   .navbar {
     font-size: 1rem; }
-  .navbar .dropdown-menu.show {
-    font-size: 1rem; } }
+    .navbar .dropdown-menu.show {
+      font-size: 1rem; } }
 
 @media screen and (max-width: 530px) {
   .contacto ul {

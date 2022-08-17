@@ -1,12 +1,15 @@
 /* MediaQuery */
 @media screen and (max-width: 650px) {
-    .logo h1 {
-        font-size: 4.5rem;
-    }
 
-    .logo img {
-        width: 75px;
-        height: 75px;
+    .logo {
+        h1 {
+            font-size: 4.5rem;
+        }
+
+        img {
+            width: 75px;
+            height: 75px;
+        }
     }
 
     .tituloOfertas {
@@ -20,10 +23,9 @@
     .navbar {
         font-size: 1rem;
 
-    }
-
-    .navbar .dropdown-menu.show {
-        font-size: 1rem;
+        .dropdown-menu.show {
+            font-size: 1rem;
+        }
     }
 
 }
@@ -77,7 +79,6 @@
 
     .navbar {
         font-size: 0.6rem;
-
     }
 
     .navbar .dropdown-menu.show {
