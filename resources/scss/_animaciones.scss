@@ -47,15 +47,25 @@
 
 @keyframes color-change-3x {
     0% {
-        color: $colorVerde;
+        color: map-get($color, verde);
     }
 
     50% {
-        color: $colorAmarillo;
+        color: map-get($color, amarillo);
     }
 
     100% {
-        color: $colorRosa;
+        color: map-get($color, rosa);
+    }
+}
+
+@keyframes color-change-2x {
+    0% {
+        color: map-get($color, azul);
+    }
+
+    100% {
+        color: map-get($color, verde);
     }
 }
 

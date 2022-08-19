@@ -1,13 +1,25 @@
-$colorAzul : #6475c3;
-$colorVerde : #64c3b3;
-$colorRosa : #e274ac;
-$colorAmarillo : #e0c645;
-
+// Variables
 $fuenteLogo: 'Acme', sans-serif;
 $fuenteNavegador: 'Lato', sans-serif;
 $fuenteTitulo: 'Alfa Slab One', cursive;
+// Maps
+$color: (
+    azul : #6475c3,
+    verde : #64c3b3,
+    rosa : #e274ac,
+    amarillo : #e0c645
+);
 
-$sizeLogo: 7rem;
-$sizeNavegador: 1.7rem;
-$sizeBuscador: 1.3rem;
-$sizeTitulo: 5rem;
+$size: (
+    logo: 7rem,
+    navegador: 1.7rem,
+    buscador: 1.3rem,
+    titulo: 5rem
+);
+
+// Mixins
+@mixin border($width, $color) {
+    border-width: $width;
+    border-color: $color;
+    border-style: solid;
+}
