@@ -1,0 +1,58 @@
+    /* Footer */
+    footer {
+        background: radial-gradient(circle at 12.3% 19.3%, map-get($color, azul) 0%, map-get($color, verde) 100.2%);
+        font-size: 1rem;
+        /* border-radius: 20px 20px 0 0; */
+
+        hr {
+            background-color: #000000;
+            border-width: 3px 0 0 0;
+            opacity: 100%;
+        }
+
+        h3 {
+            font-family: $fuenteTitulo;
+            font-size: 1.6rem;
+            text-align: center;
+            color: map-get($color, azul);
+            -webkit-text-stroke: 1px black;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .contacto {
+            iframe {
+                @include border(3px, black);
+                // width: 350px;
+                // height: 130px;
+            }
+
+            ul {
+                list-style-type: none;
+
+                li {
+                    font-family: $fuenteNavegador;
+                    font-size: 1.1rem;
+                }
+            }
+
+            .iconos {
+                a {
+                    text-decoration: none;
+                }
+            }
+
+            .derechos {
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                p {
+                    color: rgb(28, 28, 28);
+                }
+            }
+        }
+    }
