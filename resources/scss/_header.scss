@@ -44,6 +44,11 @@ header {
             font-size: map-get($size, navegador);
             font-family: $fuenteNavegador;
             background-color: map-get($color, azul);
+
+            // .dropdown-item:hover ~ .nav-item a {
+            //     background-color: whitesmoke;
+            //     color: rgb(59, 111, 207);
+            // }
         }
 
         .nav-item {
@@ -63,6 +68,13 @@ header {
                 background-color: whitesmoke;
                 color: rgb(59, 111, 207);
             }
+
+            // .dropdown {
+            //     &:hover {
+            //         background-color: whitesmoke;
+            //         color: rgb(59, 111, 207);
+            //     }
+            // }
         }
 
         .navbar-toggler {
