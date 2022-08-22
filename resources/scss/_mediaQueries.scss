@@ -1,205 +1,235 @@
 /* MediaQuery */
+@media screen and (min-width: 992px) and (max-width: 1195px) {
+    body {
+        .categorias {
+            .cardCategoria {
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 650px) {
-    header {
-        .logo {
-            h1 {
-                font-size: 6rem;
+    body {
+        header {
+            .logo {
+                h1 {
+                    font-size: 6rem;
+                }
+
+                img {
+                    width: 75px;
+                    height: 75px;
+                }
             }
 
-            img {
-                width: 75px;
-                height: 75px;
-            }
-        }
-
-        .navegador {
-            font-size: 1.5rem;
-
-            .dropdown-menu.show {
+            .navegador {
                 font-size: 1.5rem;
+
+                .dropdown-menu.show {
+                    font-size: 1.5rem;
+                }
             }
         }
-    }
 
-    body .ofertas .tituloOfertas {
-        font-size: 4rem;
-    }
+        .ofertas .tituloOfertas {
+            font-size: 4rem;
+        }
 
-    body .productos .tituloNovedades {
-        font-size: 4rem;
+        .productos .tituloNovedades {
+            font-size: 4rem;
+        }
     }
 }
 
 @media screen and (max-width: 550px) {
-    header {
-        .logo {
-            h1 {
-                font-size: 5rem;
+    body {
+        header {
+            .logo {
+                h1 {
+                    font-size: 5rem;
+                }
+
+                img {
+                    width: 75px;
+                    height: 75px;
+                }
             }
 
-            img {
-                width: 75px;
-                height: 75px;
-            }
-        }
-
-        .navegador {
-            font-size: 1.3rem;
-
-            .dropdown-menu.show {
+            .navegador {
                 font-size: 1.3rem;
+
+                .dropdown-menu.show {
+                    font-size: 1.3rem;
+                }
             }
         }
-    }
 
-    body .ofertas .tituloOfertas {
-        font-size: 3.5rem;
-    }
+        .ofertas .tituloOfertas {
+            font-size: 3.5rem;
+        }
 
-    body .productos .tituloNovedades {
-        font-size: 3.5rem;
-    }
+        .productos .tituloNovedades {
+            font-size: 3.5rem;
+        }
 
-    footer .contacto ul li {
-        font-size: 0.8rem;
+        footer .contacto ul li {
+            font-size: 0.8rem;
+        }
     }
 }
 
 @media screen and (max-width: 470px) {
-    header {
-        .logo {
-            h1 {
-                font-size: 4.5rem;
+    body {
+        header {
+            .logo {
+                h1 {
+                    font-size: 4.5rem;
+                }
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
             }
 
-            img {
-                width: 60px;
-                height: 60px;
-            }
-        }
-
-        .navegador {
-            font-size: 1rem;
-
-            .dropdown-menu {
+            .navegador {
                 font-size: 1rem;
-            }
 
-            .buscador {
-                input {
+                .dropdown-menu {
                     font-size: 1rem;
                 }
 
-                button {
-                    font-size: 1rem;
+                .buscador {
+                    input {
+                        font-size: 1rem;
+                    }
+
+                    button {
+                        font-size: 1rem;
+                    }
                 }
             }
         }
-    }
 
-    body .ofertas .tituloOfertas {
-        font-size: 3rem;
-    }
+        .ofertas .tituloOfertas {
+            font-size: 3rem;
+        }
 
-    body .productos .tituloNovedades {
-        font-size: 3rem;
+        .productos .tituloNovedades {
+            font-size: 3rem;
+        }
     }
-
 }
 
 @media screen and (max-width: 410px) {
-    header {
-        .logo {
-            h1 {
-                font-size: 4rem;
+    body {
+        header {
+            .logo {
+                h1 {
+                    font-size: 4rem;
+                }
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
             }
 
-            img {
-                width: 60px;
-                height: 60px;
-            }
-        }
-
-        .navegador {
-            font-size: 1rem;
-
-            .dropdown-menu {
+            .navegador {
                 font-size: 1rem;
-            }
 
-            .buscador {
-                input {
+                .dropdown-menu {
                     font-size: 1rem;
                 }
 
-                button {
-                    font-size: 1rem;
+                .buscador {
+                    input {
+                        font-size: 1rem;
+                    }
+
+                    button {
+                        font-size: 1rem;
+                    }
                 }
             }
         }
-    }
 
-    body .ofertas .tituloOfertas {
-        font-size: 2.5rem;
-    }
+        .ofertas .tituloOfertas {
+            font-size: 2.5rem;
+        }
 
-    body .productos .tituloNovedades {
-        font-size: 2.5rem;
+        .productos .tituloNovedades {
+            font-size: 2.5rem;
+        }
     }
-
 }
 
 @media screen and (max-width: 370px) {
-    header {
-        .logo h1 {
-            font-size: 3.3rem;
-        }
+    body {
+        header {
+            .logo h1 {
+                font-size: 3.3rem;
+            }
 
-        .navegador {
-            font-size: 0.9rem;
-
-            .dropdown-menu {
+            .navegador {
                 font-size: 0.9rem;
-            }
 
-            .buscador {
-                input {
+                .dropdown-menu {
                     font-size: 0.9rem;
                 }
 
-                button {
-                    font-size: 0.9rem;
+                .buscador {
+                    input {
+                        font-size: 0.9rem;
+                    }
+
+                    button {
+                        font-size: 0.9rem;
+                    }
                 }
             }
         }
-    }
 
-    body .ofertas .tituloOfertas {
-        font-size: 2rem;
-    }
+        .ofertas .tituloOfertas {
+            font-size: 2rem;
+        }
 
-    body .productos .tituloNovedades {
-        font-size: 2rem;
+        .productos .tituloNovedades {
+            font-size: 2rem;
+        }
     }
 }
 
 @media screen and (max-width: 350px) {
-    header {
+    body {
+        header {
 
-        .navegador {
-            font-size: 0.7rem;
-
-            .dropdown-menu {
+            .navegador {
                 font-size: 0.7rem;
-            }
 
-            .buscador {
-                input {
+                .dropdown-menu {
                     font-size: 0.7rem;
                 }
 
-                button {
-                    font-size: 0.7rem;
+                .buscador {
+                    input {
+                        font-size: 0.7rem;
+                    }
+
+                    button {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+
+        .categorias {
+            .cardCategoria {
+                p {
+                    font-size: 1.5rem;
                 }
             }
         }
@@ -207,42 +237,52 @@
 }
 
 @media screen and (max-width: 300px) {
-    header {
-        .logo {
-            h1 {
-                font-size: 3rem;
+    body {
+        header {
+            .logo {
+                h1 {
+                    font-size: 3rem;
+                }
+
+                img {
+                    width: 45px;
+                    height: 45px;
+                }
             }
 
-            img {
-                width: 45px;
-                height: 45px;
-            }
-        }
-
-        .navegador {
-            font-size: 0.5rem;
-
-            .dropdown-menu {
+            .navegador {
                 font-size: 0.5rem;
-            }
 
-            .buscador {
-                input {
+                .dropdown-menu {
                     font-size: 0.5rem;
                 }
 
-                button {
-                    font-size: 0.5rem;
+                .buscador {
+                    input {
+                        font-size: 0.5rem;
+                    }
+
+                    button {
+                        font-size: 0.5rem;
+                    }
                 }
             }
         }
-    }
 
-    body .ofertas .tituloOfertas {
-        font-size: 1.5rem;
-    }
+        .ofertas .tituloOfertas {
+            font-size: 1.5rem;
+        }
 
-    body .productos .tituloNovedades {
-        font-size: 1.5rem;
+        .categorias {
+            .cardCategoria {
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        .productos .tituloNovedades {
+            font-size: 1.5rem;
+        }
     }
 }

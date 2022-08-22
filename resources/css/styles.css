@@ -164,17 +164,16 @@ header {
 
 body {
   min-height: 100vh;
-  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  background-image: linear-gradient(to top, #e6e9f0 0%, #c1c5d5 100%);
   /* Ofertas */
   /* Categorías */
   /* Productos */ }
   body .ofertas .tituloOfertas {
     font-family: "Alfa Slab One", cursive;
     font-size: 5rem;
-    animation: bounce-top 0.9s both;
     word-wrap: break-word;
     -webkit-text-stroke: 1px black;
-    animation: color-change-2x 2s linear infinite alternate both; }
+    animation: bounce-top 0.9s both, color-change-2x 2s linear infinite alternate both; }
   body .ofertas img {
     max-height: 600px;
     animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
@@ -222,7 +221,7 @@ body {
       animation: fade-in 2.5s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
     body .productos .cardProducto .card-body .precio {
       font-size: 1.7rem; }
-    body .productos .cardProducto .card-body button {
+    body .productos .cardProducto .card-body a {
       background-color: #6475c3; }
 
 /* Footer */
@@ -260,15 +259,19 @@ footer {
     color: #1c1c1c; }
 
 /* MediaQuery */
+@media screen and (min-width: 992px) and (max-width: 1195px) {
+  body .categorias .cardCategoria p {
+    font-size: 1.4rem; } }
+
 @media screen and (max-width: 650px) {
-  header .logo h1 {
+  body header .logo h1 {
     font-size: 6rem; }
-  header .logo img {
+  body header .logo img {
     width: 75px;
     height: 75px; }
-  header .navegador {
+  body header .navegador {
     font-size: 1.5rem; }
-    header .navegador .dropdown-menu.show {
+    body header .navegador .dropdown-menu.show {
       font-size: 1.5rem; }
   body .ofertas .tituloOfertas {
     font-size: 4rem; }
@@ -276,35 +279,35 @@ footer {
     font-size: 4rem; } }
 
 @media screen and (max-width: 550px) {
-  header .logo h1 {
+  body header .logo h1 {
     font-size: 5rem; }
-  header .logo img {
+  body header .logo img {
     width: 75px;
     height: 75px; }
-  header .navegador {
+  body header .navegador {
     font-size: 1.3rem; }
-    header .navegador .dropdown-menu.show {
+    body header .navegador .dropdown-menu.show {
       font-size: 1.3rem; }
   body .ofertas .tituloOfertas {
     font-size: 3.5rem; }
   body .productos .tituloNovedades {
     font-size: 3.5rem; }
-  footer .contacto ul li {
+  body footer .contacto ul li {
     font-size: 0.8rem; } }
 
 @media screen and (max-width: 470px) {
-  header .logo h1 {
+  body header .logo h1 {
     font-size: 4.5rem; }
-  header .logo img {
+  body header .logo img {
     width: 60px;
     height: 60px; }
-  header .navegador {
+  body header .navegador {
     font-size: 1rem; }
-    header .navegador .dropdown-menu {
+    body header .navegador .dropdown-menu {
       font-size: 1rem; }
-    header .navegador .buscador input {
+    body header .navegador .buscador input {
       font-size: 1rem; }
-    header .navegador .buscador button {
+    body header .navegador .buscador button {
       font-size: 1rem; }
   body .ofertas .tituloOfertas {
     font-size: 3rem; }
@@ -312,18 +315,18 @@ footer {
     font-size: 3rem; } }
 
 @media screen and (max-width: 410px) {
-  header .logo h1 {
+  body header .logo h1 {
     font-size: 4rem; }
-  header .logo img {
+  body header .logo img {
     width: 60px;
     height: 60px; }
-  header .navegador {
+  body header .navegador {
     font-size: 1rem; }
-    header .navegador .dropdown-menu {
+    body header .navegador .dropdown-menu {
       font-size: 1rem; }
-    header .navegador .buscador input {
+    body header .navegador .buscador input {
       font-size: 1rem; }
-    header .navegador .buscador button {
+    body header .navegador .buscador button {
       font-size: 1rem; }
   body .ofertas .tituloOfertas {
     font-size: 2.5rem; }
@@ -331,15 +334,15 @@ footer {
     font-size: 2.5rem; } }
 
 @media screen and (max-width: 370px) {
-  header .logo h1 {
+  body header .logo h1 {
     font-size: 3.3rem; }
-  header .navegador {
+  body header .navegador {
     font-size: 0.9rem; }
-    header .navegador .dropdown-menu {
+    body header .navegador .dropdown-menu {
       font-size: 0.9rem; }
-    header .navegador .buscador input {
+    body header .navegador .buscador input {
       font-size: 0.9rem; }
-    header .navegador .buscador button {
+    body header .navegador .buscador button {
       font-size: 0.9rem; }
   body .ofertas .tituloOfertas {
     font-size: 2rem; }
@@ -347,30 +350,34 @@ footer {
     font-size: 2rem; } }
 
 @media screen and (max-width: 350px) {
-  header .navegador {
+  body header .navegador {
     font-size: 0.7rem; }
-    header .navegador .dropdown-menu {
+    body header .navegador .dropdown-menu {
       font-size: 0.7rem; }
-    header .navegador .buscador input {
+    body header .navegador .buscador input {
       font-size: 0.7rem; }
-    header .navegador .buscador button {
-      font-size: 0.7rem; } }
+    body header .navegador .buscador button {
+      font-size: 0.7rem; }
+  body .categorias .cardCategoria p {
+    font-size: 1.5rem; } }
 
 @media screen and (max-width: 300px) {
-  header .logo h1 {
+  body header .logo h1 {
     font-size: 3rem; }
-  header .logo img {
+  body header .logo img {
     width: 45px;
     height: 45px; }
-  header .navegador {
+  body header .navegador {
     font-size: 0.5rem; }
-    header .navegador .dropdown-menu {
+    body header .navegador .dropdown-menu {
       font-size: 0.5rem; }
-    header .navegador .buscador input {
+    body header .navegador .buscador input {
       font-size: 0.5rem; }
-    header .navegador .buscador button {
+    body header .navegador .buscador button {
       font-size: 0.5rem; }
   body .ofertas .tituloOfertas {
     font-size: 1.5rem; }
+  body .categorias .cardCategoria p {
+    font-size: 1.1rem; }
   body .productos .tituloNovedades {
     font-size: 1.5rem; } }
