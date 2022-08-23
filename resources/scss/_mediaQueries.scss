@@ -1,10 +1,12 @@
 /* MediaQuery */
 @media screen and (min-width: 992px) and (max-width: 1195px) {
     body {
-        .categorias {
-            .cardCategoria {
-                p {
-                    font-size: 1.4rem;
+        main {
+            .categorias {
+                .cardCategoria {
+                    p {
+                        font-size: 1.4rem;
+                    }
                 }
             }
         }
@@ -34,12 +36,14 @@
             }
         }
 
-        .ofertas .tituloOfertas {
-            font-size: 4rem;
-        }
+        main {
+            .ofertas h2 {
+                font-size: 4rem;
+            }
 
-        .productos .tituloNovedades {
-            font-size: 4rem;
+            .productos h2 {
+                font-size: 4rem;
+            }
         }
     }
 }
@@ -50,11 +54,6 @@
             .logo {
                 h1 {
                     font-size: 5rem;
-                }
-
-                img {
-                    width: 75px;
-                    height: 75px;
                 }
             }
 
@@ -67,16 +66,20 @@
             }
         }
 
-        .ofertas .tituloOfertas {
-            font-size: 3.5rem;
+        main {
+            .ofertas h2 {
+                font-size: 3.5rem;
+            }
+
+            .productos h2 {
+                font-size: 3.5rem;
+            }
         }
 
-        .productos .tituloNovedades {
-            font-size: 3.5rem;
-        }
-
-        footer .contacto ul li {
-            font-size: 0.8rem;
+        footer {
+            .contacto ul li {
+                font-size: 0.8rem;
+            }
         }
     }
 }
@@ -114,12 +117,14 @@
             }
         }
 
-        .ofertas .tituloOfertas {
-            font-size: 3rem;
-        }
+        main {
+            .ofertas h2 {
+                font-size: 3rem;
+            }
 
-        .productos .tituloNovedades {
-            font-size: 3rem;
+            .productos h2 {
+                font-size: 3rem;
+            }
         }
     }
 }
@@ -130,11 +135,6 @@
             .logo {
                 h1 {
                     font-size: 4rem;
-                }
-
-                img {
-                    width: 60px;
-                    height: 60px;
                 }
             }
 
@@ -157,12 +157,14 @@
             }
         }
 
-        .ofertas .tituloOfertas {
-            font-size: 2.5rem;
-        }
+        main {
+            .ofertas h2 {
+                font-size: 2.6rem;
+            }
 
-        .productos .tituloNovedades {
-            font-size: 2.5rem;
+            .productos h2 {
+                font-size: 2.6rem;
+            }
         }
     }
 }
@@ -193,12 +195,14 @@
             }
         }
 
-        .ofertas .tituloOfertas {
-            font-size: 2rem;
-        }
+        main {
+            .ofertas h2 {
+                font-size: 2rem;
+            }
 
-        .productos .tituloNovedades {
-            font-size: 2rem;
+            .productos h2 {
+                font-size: 2rem;
+            }
         }
     }
 }
@@ -206,7 +210,6 @@
 @media screen and (max-width: 350px) {
     body {
         header {
-
             .navegador {
                 font-size: 0.7rem;
 
@@ -226,10 +229,12 @@
             }
         }
 
-        .categorias {
-            .cardCategoria {
-                p {
-                    font-size: 1.5rem;
+        main {
+            .categorias {
+                .cardCategoria {
+                    p {
+                        font-size: 1.5rem;
+                    }
                 }
             }
         }
@@ -269,20 +274,22 @@
             }
         }
 
-        .ofertas .tituloOfertas {
-            font-size: 1.5rem;
-        }
+        main {
+            .ofertas h2 {
+                font-size: 1.5rem;
+            }
 
-        .categorias {
-            .cardCategoria {
-                p {
-                    font-size: 1.1rem;
+            .categorias {
+                .cardCategoria {
+                    p {
+                        font-size: 1.1rem;
+                    }
                 }
             }
-        }
 
-        .productos .tituloNovedades {
-            font-size: 1.5rem;
+            .productos h2 {
+                font-size: 1.5rem;
+            }
         }
     }
 }
