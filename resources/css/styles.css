@@ -164,7 +164,9 @@ header {
 
 body {
   min-height: 100vh;
-  background-image: linear-gradient(to top, #e6e9f0 0%, #c1c5d5 100%); }
+  background-image: url(../images/backgrounds/background4.jpg);
+  background-size: cover;
+  background-position: center center; }
   body main {
     /* Ofertas */
     /* Categorías */
@@ -208,7 +210,7 @@ body {
       font-size: 5rem;
       word-wrap: break-word;
       -webkit-text-stroke: 1px black;
-      animation: color-change-2x 2s linear infinite alternate both; }
+      animation: bounce-top 0.9s both, color-change-2x 2s linear infinite alternate both; }
     body main .productos .cardProducto {
       transform: perspective(1px) translateZ(0);
       box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -243,6 +245,30 @@ body main .contacto {
     border-color: black;
     border-style: solid;
     height: 400px; }
+
+body main .carrito {
+  font-family: "Alfa Slab One", cursive; }
+  body main .carrito h2 {
+    font-family: "Alfa Slab One", cursive;
+    font-size: 5rem;
+    word-wrap: break-word;
+    -webkit-text-stroke: 1px black;
+    animation: bounce-top 0.9s both, color-change-2x 2s linear infinite alternate both; }
+  body main .carrito td {
+    font-size: 1.5rem; }
+  body main .carrito p {
+    font-size: 3.5rem; }
+
+body main {
+  min-height: 100vh; }
+  body main .login {
+    font-family: "Alfa Slab One", cursive; }
+    body main .login h2 {
+      font-family: "Alfa Slab One", cursive;
+      font-size: 5rem;
+      word-wrap: break-word;
+      -webkit-text-stroke: 1px black;
+      animation: bounce-top 0.9s both, color-change-2x 2s linear infinite alternate both; }
 
 /* Footer */
 footer {

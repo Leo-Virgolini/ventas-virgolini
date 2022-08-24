@@ -1,0 +1,23 @@
+body {
+    main {
+        .carrito {
+            font-family: $fuenteTitulo;
+
+            h2 {
+                font-family: $fuenteTitulo;
+                font-size: map-get($size, titulo);
+                word-wrap: break-word;
+                -webkit-text-stroke: 1px black;
+                animation: bounce-top 0.9s both, color-change-2x 2s linear infinite alternate both;
+            }
+
+            td {
+                font-size: 1.5rem;
+            }
+
+            p{
+                font-size: 3.5rem;
+            }
+        }
+    }
+}

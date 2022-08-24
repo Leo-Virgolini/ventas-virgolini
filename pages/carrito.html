@@ -5,137 +5,215 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página e-commerce de venta de productos de bazar.">
-    <meta name="keywords" content="comprar, bazar, cocina">
-    <link rel="icon" type="image/png" href="../resources/favicon/apple-touch-icon.png">
+    <meta name="description" content="Checkout">
+    <meta name="keywords" content="carrito">
+    <link rel="icon" type="image/png" href="../resources/favicon/venta.png">
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="../resources/css/styles.css">
+    <script src="https://kit.fontawesome.com/bda957b7e9.js" crossorigin="anonymous"></script>
     <title>Ventas™-Carrito</title>
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <!-- Logo -->
-        <div class="logo">
-            <a href="../index.html">
-                <img src="../resources/images/venta.png" alt="Logo">
-                <h1>VENTA™</h1>
-            </a>
-        </div>
-        <!-- Navegador -->
-        <nav>
-            <a href="../index.html" class="navInicio">Inicio</a>
-            <a href="#" class="navCategorias">Categorías↓</a>
-            <a href="productos.html" class="navProductos">Productos</a>
-            <a href="contacto.html" class="navContacto">Contacto</a>
-            <div class="navDerecha">
-                <a href="carrito.html" class="navCarrito">Carrito</a>
-                <a href="login.html" class="navLogin">Login</a>
+    <div class="container-fluid">
+        <!-- Header -->
+        <div class="row">
+            <div class="col-12 g-0">
+                <header>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 g-0">
+                                <!-- Logo -->
+                                <a href="../index.html" class="logo bg-gradient d-flex justify-content-center align-items-center w-100">
+                                    <img src="../resources/images/iconos/venta.png" alt="Logo">
+                                    <h1>VENTAS™</h1>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 g-0">
+                                <!-- Navegador -->
+                                <nav class="navegador navbar navbar-expand-xl  bg-gradient fw-bold">
+                                    <div class="container-fluid">
+                                        <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                            aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <div class="container-fluid">
+                                                <div class="row flex-wrap justify-content-center align-items-start align-content-center">
+                                                    <div class="col-8 g-0">
+                                                        <ul class="navbar-nav me-auto d-flex justify-content-start">
+                                                            <li class="nav-item active mb-2 mx-1">
+                                                                <a href="../index.html" class="nav-link hvr-icon-grow d-flex justify-content-center align-items-center" aria-current="page">
+                                                                    <i class="fa-solid fa-house hvr-icon me-2"></i>Inicio
+                                                                </a>
+                                                            </li>
+                                                            <li class="nav-item dropdown mb-2 mx-1">
+                                                                <a href="#" class="nav-link dropdown-toggle hvr-icon-grow d-flex justify-content-center align-items-center" role="button"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <i class="fa-solid fa-tags hvr-icon me-2"></i>Categorías
+                                                                </a>
+                                                                <ul class="dropdown-menu fw-bold">
+                                                                    <li><a class="dropdown-item" href="#">Coctelería</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Repostería</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Maquinaria</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Horno</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Ollas y cacerolas</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Infusiones</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Parrilla</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="nav-item mb-2 mx-1">
+                                                                <a href="./productos.html" class="nav-link hvr-icon-grow d-flex justify-content-center align-items-center">
+                                                                    <i class="fa-solid fa-basket-shopping hvr-icon me-2"></i>Productos
+                                                                </a>
+                                                            </li>
+                                                            <li class="nav-item mb-2 mx-1">
+                                                                <a href="./contacto.html" class="nav-link hvr-icon-grow d-flex justify-content-center align-items-center">
+                                                                    <i class="fa-solid fa-address-book hvr-icon me-2"></i>Contacto
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-4 g-0">
+                                                        <ul class="navbar-nav me-auto d-flex justify-content-end">
+                                                            <li class="nav-item mb-2 mx-1" id="carrito">
+                                                                <a href="./carrito.html" class="nav-link hvr-icon-grow d-flex justify-content-center align-items-center">
+                                                                    <i class="fa-solid fa-cart-shopping hvr-icon me-2"></i>Carrito<span class="badge rounded-pill text-bg-warning ms-1">2</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="nav-item mb-2 mx-1">
+                                                                <a href="./login.html" class="nav-link hvr-icon-grow d-flex justify-content-center align-items-center">
+                                                                    <i class="fa-solid fa-right-to-bracket hvr-icon me-2"></i>Login
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- Buscador -->
+                                                    <div class="col-12 g-0">
+                                                        <form action="./productos.html" method="get" class="d-flex justify-content-start align-items-center buscador my-1" role="search">
+                                                            <input class="form-control p-2 mx-1" type="search" aria-label="Search" name="buscar" placeholder="Ej: Ollas" required autofocus>
+                                                            <button type="submit" class="btn btn-primary col-3 p-2 mx-1 d-flex justify-content-center align-items-center hvr-icon-grow">
+                                                                <i class="fa-solid fa-magnifying-glass hvr-icon me-2"></i>Buscar
+                                                            </button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </header>
             </div>
-            <!-- Buscador -->
-            <div class="buscador">
-                <input type="search" name="buscar" id="buscar" placeholder="Buscar" required autofocus>
-                <button type="submit">Buscar</button>
+        </div>
+        <!-- Main -->
+        <div class="row">
+            <main class="col-12">
+                <section class="carrito mt-3">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Carrito</h2>
+                                <table class="table table-info table-striped table-hover align-middle text-center">
+                                    <thead class="table-dark text-center">
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Imagen</th>
+                                            <th scope="col">Artículo</th>
+                                            <th scope="col">Cantidad</th>
+                                            <th scope="col">Precio</th>
+                                            <th scope="col">Subtotal</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td><img src="../resources/images/productos/2.png" class="card-img-top img-fluid w-50" loading="lazy" alt="Jarra de Vidrio Templado Luminarc Tivoli 2,3 L">
+                                            </td>
+                                            <td>Jarra de Vidrio Templado Luminarc Tivoli 2,3 L</td>
+                                            <td>2</td>
+                                            <td>$2.984</td>
+                                            <td>$5.968</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td><img src="../resources/images/productos/12.png" class="card-img-top img-fluid w-50" loading="lazy" alt="Set Hudson Inducción Cerámica"></td>
+                                            <td>Set Hudson Inducción Cerámica</td>
+                                            <td>1</td>
+                                            <td>$53.528</td>
+                                            <td>$53.528</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="text-success">TOTAL= $59.496</p>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-lg btn-danger">Generar pago</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <!-- Footer -->
+        <div class="row">
+            <div class="col-12 g-0">
+                <footer class="d-flex flex-column flex-wrap justify-content-center align-items-stretch align-content-space-between">
+                    <hr class="m-0 p-0">
+                    <a href="./contacto.html" class="align-self-center">
+                        <h3>Contacto</h3>
+                    </a>
+                    <div class="contacto">
+                        <div class="container-fluid">
+                            <div class="row justify-content-start align-items-center">
+                                <div class="col-sm-12 col-md-5 col-lg-4">
+                                    <iframe class="w-100"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15299.25245645202!2d-58.49360352369156!3d-34.53585964617376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6cc77eb3961%3A0xee434cae937168d9!2sFlorida%2C%20Buenos%20Aires%20Province!5e0!3m2!1sen!2sar!4v1657232248923!5m2!1sen!2sar"
+                                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                    </iframe>
+                                </div>
+                                <div class="col-sm-12 col-md-3 col-lg-3 gx-sm-4 gx-md-0 fw-bold">
+                                    <ul class="px-0 my-0">
+                                        <li>Calle Falsa 1234, Florida, Buenos Aires, Argentina</li>
+                                        <li><a href="tel://23923929210">+54 11 12345678</a></li>
+                                        <li>ventas@ventas.com</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-12 col-md-4 col-lg-5">
+                                    <div class="iconos d-flex justify-content-center align-items-center">
+                                        <a href="https://web.whatsapp.com/" class="mx-2" target="_blank">
+                                            <img class="w-100 h-100" src="../resources/images/iconos/whatsapp.png" alt="Whatsapp" loading="lazy">
+                                        </a>
+                                        <a href="https://www.instagram.com/kitchentools.ig/" class="mx-2" target="_blank">
+                                            <img class="w-100 h-100" src="../resources/images/iconos/instagram.png" alt="Instagram" loading="lazy">
+                                        </a>
+                                        <a href="https://www.facebook.com/kitchentools.fb/" class="mx-2" target="_blank">
+                                            <img class="w-100 h-100" src="../resources/images/iconos/facebook.png" alt="Facebook" loading="lazy">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="derechos d-flex justify-content-start align-items-center">
+                                        <img src="../resources/images/iconos/ventas.png" alt="Logo" loading="lazy">
+                                        <p class="mb-0 fst-italic">
+                                            VENTAS Copyright © All rights reserved.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </div>
-        </nav>
-    </header>
-
-    <main>
-        <!-- Carrito de compra -->
-        <section class="carrito">
-            <h2>Carrito</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th scope="col">Articulo</th>
-                        <th scope="col">Imagen</th>
-                        <th scope="col">Precio</th>
-                        <th scope="col">Cantidad</th>
-                        <th scope="col">Subtotal</th>
-                        <th scope="col">Quitar</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Producto 1</td>
-                        <td>
-                            <img src="https://picsum.photos/200?random=1" alt="Producto 1">
-                        </td>
-                        <td> $5000.00</td>
-                        <td>
-                            2
-                        </td>
-                        <td>
-                            $10000.00
-                        </td>
-                        <td>
-                            <form method="POST" action="#">
-                                <button type="submit">
-                                    QUITAR
-                                </button>
-                            </form>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Producto 2</td>
-                        <td>
-                            <img src="https://picsum.photos/200?random=2" alt="Producto 2">
-                        </td>
-                        <td> $3000.00</td>
-                        <td>
-                            3
-                        </td>
-                        <td>
-                            $9000.00
-                        </td>
-                        <td>
-                            <form method="POST" action="#">
-                                <button type="submit">
-                                    QUITAR
-                                </button>
-                            </form>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3>TOTAL: $19000.00</h3>
-
-            <form method="POST" action="#">
-                <button type="submit">GENERAR PAGO</button>
-            </form>
-        </section>
-    </main>
-    <!-- Footer -->
-    <hr>
-    <footer>
-        <h3>Contacto</h3>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15299.25245645202!2d-58.49360352369156!3d-34.53585964617376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6cc77eb3961%3A0xee434cae937168d9!2sFlorida%2C%20Buenos%20Aires%20Province!5e0!3m2!1sen!2sar!4v1657232248923!5m2!1sen!2sar"
-            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <ul>
-            <li>Calle Falsa 1234, Florida, Buenos Aires, Argentina</li>
-            <li><a href="tel://23923929210">+54 11 12345678</a></li>
-            <li>ventas@ventas.com</li>
-        </ul>
-        <div class="iconos">
-            <a href="#">
-                <img src="../resources/images/whatsapp.png" alt="Whatsapp">
-            </a>
-            <a href="#">
-                <img src="../resources/images/instagram.png" alt="Instagram">
-            </a>
-            <a href="#">
-                <img src="../resources/images/facebook.png" alt="Facebook">
-            </a>
         </div>
-        <div class="derechos">
-            <img src="../resources/images/ventas.png" alt="Logo">
-            <p>
-                VENTAS Copyright © All rights reserved.
-            </p>
-        </div>
-    </footer>
+    </div>
+    <script src="../resources/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
