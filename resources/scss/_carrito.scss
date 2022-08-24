@@ -24,6 +24,10 @@ body {
                     tr {
                         td {
                             font-size: 1.5rem;
+                            img {
+                                max-width: 200px;
+                                max-height: 200px;
+                            }
                         }
 
                     }
