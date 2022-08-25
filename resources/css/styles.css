@@ -92,9 +92,6 @@ header {
   /* Navegador */ }
   header .logo {
     background-color: #6475c3;
-    border-width: 3px;
-    border-color: black;
-    border-style: solid;
     text-decoration: none; }
     header .logo img {
       width: 100px;
@@ -264,9 +261,9 @@ body main .carrito {
   body main .carrito table thead tr th {
     font-size: 1.8rem; }
   body main .carrito table tbody tr td {
-    font-size: 1.5rem; }
+    font-size: 1rem; }
     body main .carrito table tbody tr td p {
-      font-size: 1.5rem; }
+      font-size: 1rem; }
     body main .carrito table tbody tr td img {
       max-width: 300px;
       max-height: 300px; }
