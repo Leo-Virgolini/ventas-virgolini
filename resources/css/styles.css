@@ -228,10 +228,17 @@ body {
         background-color: #6475c3; }
 
 body main .contacto {
+  font-family: "Alfa Slab One", cursive;
   background-image: url(../images/banners/4.jpg);
   background-size: cover;
-  background-position: center center;
-  font-family: "Alfa Slab One", cursive; }
+  background-position: center center; }
+  body main .contacto .container {
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.925) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.925) 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; }
   body main .contacto h2 {
     font-family: "Alfa Slab One", cursive;
     font-size: 5rem;
@@ -258,19 +265,36 @@ body main .carrito {
     font-size: 1.8rem; }
   body main .carrito table tbody tr td {
     font-size: 1.5rem; }
+    body main .carrito table tbody tr td p {
+      font-size: 1.5rem; }
+    body main .carrito table tbody tr td img {
+      max-width: 300px;
+      max-height: 300px; }
   body main .carrito p {
     font-size: 3.5rem; }
+  body main .carrito button {
+    font-size: 3.5rem; }
 
-body main {
-  min-height: 100vh; }
-  body main .login {
-    font-family: "Alfa Slab One", cursive; }
-    body main .login h2 {
-      font-family: "Alfa Slab One", cursive;
-      font-size: 5rem;
-      word-wrap: break-word;
-      -webkit-text-stroke: 1px black;
-      animation: bounce-top 0.9s both, color-change-2x 2s linear infinite alternate both; }
+body main .login {
+  min-height: 50vh;
+  font-family: "Alfa Slab One", cursive; }
+  body main .login h2 {
+    font-family: "Alfa Slab One", cursive;
+    font-size: 5rem;
+    word-wrap: break-word;
+    -webkit-text-stroke: 1px black;
+    animation: bounce-top 0.9s both, color-change-2x 2s linear infinite alternate both; }
+
+body main .registro {
+  font-family: "Alfa Slab One", cursive; }
+  body main .registro h2 {
+    font-family: "Alfa Slab One", cursive;
+    font-size: 5rem;
+    word-wrap: break-word;
+    -webkit-text-stroke: 1px black;
+    animation: bounce-top 0.9s both, color-change-2x 2s linear infinite alternate both; }
+  body main .registro input {
+    background-color: #d7d8cf; }
 
 /* Footer */
 footer {

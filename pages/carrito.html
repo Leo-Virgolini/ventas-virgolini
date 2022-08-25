@@ -118,40 +118,46 @@
                         <div class="row">
                             <div class="col-12">
                                 <h2>Carrito</h2>
-                                <table class="table table-info table-striped table-hover align-middle text-center">
+                                <table class="table table-light table-striped table-hover align-middle text-center">
                                     <thead class="table-dark text-center">
                                         <tr>
                                             <th scope="col">#</th>
-                                            <th scope="col">Imagen</th>
+                                            <!-- <th scope="col">Imagen</th> -->
                                             <th scope="col">Artículo</th>
                                             <th scope="col">Cantidad</th>
                                             <th scope="col">Precio</th>
                                             <th scope="col">Subtotal</th>
+                                            <th scope="col">Quitar</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <th scope="row">1</th>
-                                            <td><img src="../resources/images/productos/2.png" class="img-fluid" loading="lazy" alt="Jarra de Vidrio Templado Luminarc Tivoli 2,3 L">
+                                            <td>
+                                                <img src="../resources/images/productos/2.png" class="img-fluid" loading="lazy" alt="Jarra de Vidrio Templado Luminarc Tivoli 2,3 L">
+                                                <p class="mb-0">Jarra de Vidrio Templado Luminarc Tivoli 2,3 L</p>
                                             </td>
-                                            <td>Jarra de Vidrio Templado Luminarc Tivoli 2,3 L</td>
                                             <td>2</td>
                                             <td>$2.984</td>
                                             <td>$5.968</td>
+                                            <td><button type="submit" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">2</th>
-                                            <td><img src="../resources/images/productos/12.png" class="img-fluid" loading="lazy" alt="Set Hudson Inducción Cerámica"></td>
-                                            <td>Set Hudson Inducción Cerámica</td>
+                                            <td>
+                                                <img src="../resources/images/productos/12.png" class="img-fluid" loading="lazy" alt="Set Hudson Inducción Cerámica">
+                                                <p class="mb-0">Set Hudson Inducción Cerámica</p>
+                                            </td>
                                             <td>1</td>
                                             <td>$53.528</td>
                                             <td>$53.528</td>
+                                            <td><button type="submit" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button></td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <p class="text-success">TOTAL= $59.496</p>
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-lg btn-danger">Generar pago</button>
+                                <p class="text-success">TOTAL: $59.496</p>
+                                <div class="col-12 mb-5">
+                                    <button type="submit" class="btn btn-lg btn-primary"><i class="fa-solid fa-credit-card me-2"></i>Generar pago</button>
                                 </div>
                             </div>
                         </div>

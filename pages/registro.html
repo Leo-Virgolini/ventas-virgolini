@@ -118,11 +118,11 @@
                     <div class="container-fluid">
                         <h2>Registrarse</h2>
                         <form class="row g-3" action="#">
-                            <div class="col-12">
+                            <div class="col-6">
                                 <label for="nombre" class="form-label">Nombre:</label>
                                 <input type="text" id="nombre" class="form-control" name="nombre" autocomplete="given-name" required placeholder="Nombre">
                             </div>
-                            <div class="col-12">
+                            <div class="col-6">
                                 <label for="apellido" class="form-label">Apellido:</label>
                                 <input type="text" id="apellido" class="form-control" name="apellido" autocomplete="family-name" required placeholder="Apellido">
                             </div>
@@ -138,15 +138,13 @@
                                 <label for="localidad" class="form-label">Localidad:</label>
                                 <input type="text" id="localidad" class="form-control" name="localidad" autocomplete="address-level2" required placeholder="Localidad">
                             </div>
-                            <div class="col-12">
-                                <div>
-                                    <label for="calle" class="form-label">Calle:</label>
-                                    <input type="text" id="calle" class="form-control" name="calle" autocomplete="street-address" required placeholder="Calle">
-                                </div>
-                                <div>
-                                    <label for="numero" class="form-label">N°:</label>
-                                    <input type="text" id="numero" class="form-control" name="numero" required placeholder="N°">
-                                </div>
+                            <div class="col-6">
+                                <label for="calle" class="form-label">Calle:</label>
+                                <input type="text" id="calle" class="form-control" name="calle" autocomplete="street-address" required placeholder="Calle">
+                            </div>
+                            <div class="col-6">
+                                <label for="numero" class="form-label">N°:</label>
+                                <input type="text" id="numero" class="form-control" name="numero" required placeholder="N°">
                             </div>
                             <div class="col-12">
                                 <label for="numero" class="form-label">Código postal:</label>
@@ -165,7 +163,7 @@
                                 <label for="pass" class="form-label">Contraseña:</label>
                                 <input type="password" id="pass" class="form-control" name="password" autocomplete="new-password" required placeholder="Contraseña">
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 mb-1">
                                 <button type="submit" class="btn btn-lg btn-primary">Registrarse</button>
                             </div>
                         </form>
