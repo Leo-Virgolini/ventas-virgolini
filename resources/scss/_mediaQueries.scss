@@ -1,4 +1,11 @@
 /* MediaQuery */
+// @media screen and (min-width: 1200px) {
+//     .collapse {
+//         display: none !important;
+//     }
+// }
+
+
 @media screen and (min-width: 992px) and (max-width: 1195px) {
     body {
         main {
@@ -27,11 +34,13 @@
                 }
             }
 
-            .navegador {
-                font-size: 1.5rem;
-
-                .dropdown-menu.show {
+            .verde {
+                .navegador {
                     font-size: 1.5rem;
+
+                    .dropdown-menu.show {
+                        font-size: 1.5rem;
+                    }
                 }
             }
         }
@@ -57,11 +66,13 @@
                 }
             }
 
-            .navegador {
-                font-size: 1.3rem;
-
-                .dropdown-menu.show {
+            .verde {
+                .navegador {
                     font-size: 1.3rem;
+
+                    .dropdown-menu.show {
+                        font-size: 1.3rem;
+                    }
                 }
             }
         }
@@ -98,11 +109,13 @@
                 }
             }
 
-            .navegador {
-                font-size: 1rem;
-
-                .dropdown-menu {
+            .verde {
+                .navegador {
                     font-size: 1rem;
+
+                    .dropdown-menu {
+                        font-size: 1rem;
+                    }
                 }
 
                 .buscador {
@@ -138,11 +151,13 @@
                 }
             }
 
-            .navegador {
-                font-size: 1rem;
-
-                .dropdown-menu {
+            .verde {
+                .navegador {
                     font-size: 1rem;
+
+                    .dropdown-menu {
+                        font-size: 1rem;
+                    }
                 }
 
                 .buscador {
@@ -176,11 +191,13 @@
                 font-size: 3.3rem;
             }
 
-            .navegador {
-                font-size: 0.9rem;
-
-                .dropdown-menu {
+            .verde {
+                .navegador {
                     font-size: 0.9rem;
+
+                    .dropdown-menu {
+                        font-size: 0.9rem;
+                    }
                 }
 
                 .buscador {
@@ -216,15 +233,15 @@
                 .dropdown-menu {
                     font-size: 0.7rem;
                 }
+            }
 
-                .buscador {
-                    input {
-                        font-size: 0.7rem;
-                    }
+            .buscador {
+                input {
+                    font-size: 0.7rem;
+                }
 
-                    button {
-                        font-size: 0.7rem;
-                    }
+                button {
+                    font-size: 0.7rem;
                 }
             }
         }
@@ -255,11 +272,13 @@
                 }
             }
 
-            .navegador {
-                font-size: 0.5rem;
-
-                .dropdown-menu {
+            .verde {
+                .navegador {
                     font-size: 0.5rem;
+
+                    .dropdown-menu {
+                        font-size: 0.5rem;
+                    }
                 }
 
                 .buscador {

@@ -7,17 +7,40 @@ body {
     background-size: cover;
     background-position: center center;
 
+    // background-color: map-get($color, azul);
+
     main {
+
+        .banner {
+            background-image: url(../images/banners/6.jpg);
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+
+            p {
+                font-family: $fuenteTitulo;
+                font-size: map-get($size, titulo);
+                // color: map-get($color, azul);
+                word-wrap: break-word;
+                -webkit-text-stroke: 1px black;
+                animation: color-change-2x 2s linear infinite alternate both;
+                background: rgba(0, 0, 0, .4);
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 0.925) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.925) 100%);
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+                height: 100%;
+            }
+        }
 
         /* Ofertas */
         .ofertas {
             h2 {
                 font-family: $fuenteTitulo;
                 font-size: map-get($size, titulo);
-                // color: map-get($color, azul);
                 word-wrap: break-word;
                 -webkit-text-stroke: 1px black;
-                animation: bounce-top 0.9s both, color-change-2x 2s linear infinite alternate both;
+                animation: color-change-2x 2s linear infinite alternate both;
             }
 
             img {
@@ -29,19 +52,11 @@ body {
 
         /* Categorías */
         .categorias {
+            // background-image: url(../images/banners/6.jpg);
+            // background-size: cover;
+            // background-position: center center;
+
             .cardCategoria {
-                transform: perspective(1px) translateZ(0);
-                box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-                transition-duration: 0.3s;
-                transition-property: box-shadow;
-                box-shadow: inset 0 0 0 4px #e1e1e1, 0 0 1px rgba(0, 0, 0, 0);
-
-                &:hover,
-                &:focus,
-                &:active {
-                    box-shadow: inset 0 0 0 4px map-get($color, azul), 0 0 1px rgba(0, 0, 0, 0);
-                }
-
                 a {
                     font-family: $fuenteTitulo;
                     font-size: 1.8rem;
@@ -68,7 +83,7 @@ body {
         /* Productos */
         .productos {
             h2 {
-                // @extend .ofertas h2;
+                // @extend main .ofertas h2;
                 font-family: $fuenteTitulo;
                 font-size: map-get($size, titulo);
                 word-wrap: break-word;
