@@ -39,7 +39,7 @@ header {
         .navegador {
             font-size: map-get($size, navegador);
             font-family: $fuenteNavegador;
-            background-color: map-get($color, verde);
+            // background-color: map-get($color, verde);
             // border-radius: 10px; 
             // @include border(3px, black);
 
@@ -109,7 +109,7 @@ header {
     }
 
     .buscador {
-        background-color: map-get($color, verde);
+        // background-color: map-get($color, verde);
 
         input {
             /* width: 70%; */

@@ -61,11 +61,11 @@
 
 @keyframes color-change-2x {
     0% {
-        color: map-get($color, azul);
+        color: #6475c3;
     }
 
     100% {
-        color: map-get($color, verde);
+        color: white;
     }
 }
 
