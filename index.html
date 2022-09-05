@@ -22,10 +22,10 @@
                 <header>
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-12 g-0">
+                            <div class="col-12 g-0 mb-1">
                                 <!-- Logo -->
                                 <a href="index.html" class="logo bg-gradient d-flex justify-content-center align-items-center w-100">
-                                    <img src="resources/images/iconos/venta.png" alt="Logo">
+                                    <img src="resources/images/iconos/logo4.png" alt="Logo">
                                     <h1 class="mb-0">VENTAS™</h1>
                                 </a>
                             </div>
@@ -33,7 +33,7 @@
                         <div class="row verde bg-gradient">
                             <div class="col-12 g-0">
                                 <!-- Navegador -->
-                                <nav class="navegador navbar navbar-expand-xl fw-bold">
+                                <nav class="navegador navbar navbar-expand-lg fw-bold">
                                     <div class="container-fluid">
                                         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
                                         <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -117,14 +117,21 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 g-0">
-                            <div class="banner">
+                            <section class="banner d-flex justify-content-center align-items-center">
                                 <video autoplay muted loop>
                                     <source src="./resources/video/video1.mp4" type="video/mp4">
                                 </video>
                                 <div class="overlay">
-                                    <p class="text-center">SITIO Nº1 EN VENTAS DE ARTÍCULOS DE COCINA</p>
+                                    <h2 class="text-center">SITIO Nº1 EN VENTAS DE ARTICULOS DE COCINA
+                                    </h2>
+                                    <h3>
+                                        Compras y ventas minoristas
+                                    </h3>
+                                    <h4>
+                                        Desde 1960 en tu hogar
+                                    </h4>
                                 </div>
-                            </div>
+                            </section>
                             <section class="ofertas mt-2">
                                 <h2 class="text-center">OFERTAS</h2>
                                 <!-- Carousel de ofertas -->
@@ -136,7 +143,7 @@
                                         <button type="button" data-bs-target="#carouselOfertas" data-bs-slide-to="3" aria-label="Slide 4"></button>
                                         <button type="button" data-bs-target="#carouselOfertas" data-bs-slide-to="4" aria-label="Slide 5"></button>
                                     </div>
-                                    <div class="carousel-inner">
+                                    <div class="carousel-inner pt-3 pb-3">
                                         <div class="carousel-item active">
                                             <a href="#">
                                                 <img src="./resources/images/ofertas/1.png" class="d-block img-fluid w-100" alt="Oferta 1" loading="lazy">
@@ -230,15 +237,19 @@
                                     <h2 class="text-center">NOVEDADES</h2>
                                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-5">
                                         <div class="col">
-                                            <div class="card cardProducto d-flex flex-column justify-content-center align-items-center">
-                                                <span class="badge rounded-pill text-bg-info ms-3 mt-2 mx-auto">Novedad</span>
-                                                <span class="badge rounded-pill text-bg-success ms-3 mt-2 mx-auto">Oferta</span>
+                                            <div class="card cardProducto d-flex flex-column justify-content-center align-items-center h-100">
+                                                <div class="card-header-pills">
+                                                    <span class="badge text-bg-info">Novedad</span>
+                                                    <span class="badge text-bg-success">Oferta</span>
+                                                </div>
                                                 <a href="#">
                                                     <img src="./resources/images/productos/1.png" alt="Panera Redonda de Mimbre Chica" class="card-img-top img-fluid w-100" loading="lazy">
                                                 </a>
                                                 <div class="card-body text-center">
                                                     <h5 class="card-title precio text-success">$490</h5>
                                                     <p class="card-text">Panera Redonda de Mimbre Chica</p>
+                                                </div>
+                                                <div class="card-footer bg-transparent border-0">
                                                     <a type="button" class="btn btn-primary" href="#carrito">
                                                         <i class="fa-solid fa-cart-shopping me-2"></i>Agregar al carrito
                                                     </a>
@@ -246,7 +257,7 @@
                                             </div>
                                         </div>
                                         <div class="col">
-                                            <div class="card cardProducto d-flex flex-column justify-content-center align-items-center">
+                                            <div class="card cardProducto d-flex flex-column justify-content-center align-items-center h-100">
                                                 <a href="#">
                                                     <img src="./resources/images/productos/2.png" alt="Jarra de Vidrio Templado Luminarc Tivoli 2,3 L" class="card-img-top img-fluid w-100"
                                                         loading="lazy">
@@ -254,6 +265,8 @@
                                                 <div class="card-body text-center">
                                                     <h5 class="card-title precio text-success">$2.984</h5>
                                                     <p class="card-text">Jarra de Vidrio Templado Luminarc Tivoli 2,3 L</p>
+                                                </div>
+                                                <div class="card-footer bg-transparent border-0">
                                                     <a type="button" class="btn btn-primary" href="#carrito">
                                                         <i class="fa-solid fa-cart-shopping me-2"></i>Agregar al carrito
                                                     </a>
@@ -261,7 +274,7 @@
                                             </div>
                                         </div>
                                         <div class="col">
-                                            <div class="card cardProducto d-flex flex-column justify-content-center align-items-center">
+                                            <div class="card cardProducto d-flex flex-column justify-content-center align-items-center h-100">
                                                 <a href="#">
                                                     <img src="./resources/images/productos/3.png" alt="Batidor Semiautomático Acero Inoxidable 29 cm" class="card-img-top img-fluid w-100"
                                                         loading="lazy">
@@ -269,6 +282,8 @@
                                                 <div class="card-body text-center">
                                                     <h5 class="card-title precio text-success">$830</h5>
                                                     <p class="card-text">Batidor Semiautomático Acero Inoxidable 29 cm</p>
+                                                </div>
+                                                <div class="card-footer bg-transparent border-0">
                                                     <a type="button" class="btn btn-primary" href="#carrito">
                                                         <i class="fa-solid fa-cart-shopping me-2"></i>Agregar al carrito
                                                     </a>
@@ -276,7 +291,7 @@
                                             </div>
                                         </div>
                                         <div class="col">
-                                            <div class="card cardProducto d-flex flex-column justify-content-center align-items-center">
+                                            <div class="card cardProducto d-flex flex-column justify-content-center align-items-center h-100">
                                                 <a href="#">
                                                     <img src="./resources/images/productos/4.png" alt="Taza Café Transparente Doble Vidrio 250 ml Pack x2" class="card-img-top img-fluid w-100"
                                                         loading="lazy">
@@ -284,6 +299,8 @@
                                                 <div class="card-body text-center">
                                                     <h5 class="card-title precio text-success">$4.280</h5>
                                                     <p class="card-text">Taza Café Transparente Doble Vidrio 250 ml Pack x2</p>
+                                                </div>
+                                                <div class="card-footer bg-transparent border-0">
                                                     <a type="button" class="btn btn-primary" href="#carrito">
                                                         <i class="fa-solid fa-cart-shopping me-2"></i>Agregar al carrito
                                                     </a>
@@ -291,7 +308,7 @@
                                             </div>
                                         </div>
                                         <div class="col">
-                                            <div class="card cardProducto d-flex flex-column justify-content-center align-items-center">
+                                            <div class="card cardProducto d-flex flex-column justify-content-center align-items-center h-100">
                                                 <a href="#">
                                                     <img src="./resources/images/productos/5.png" alt="Taza Café Transparente Doble Vidrio Kremer 100 ml Pack x2" class="card-img-top img-fluid w-100"
                                                         loading="lazy">
@@ -299,6 +316,8 @@
                                                 <div class="card-body text-center">
                                                     <h5 class="card-title precio text-success">$2.567</h5>
                                                     <p class="card-text">Taza Café Transparente Doble Vidrio Kremer 100 ml Pack x2</p>
+                                                </div>
+                                                <div class="card-footer bg-transparent border-0">
                                                     <a type="button" class="btn btn-primary" href="#carrito">
                                                         <i class="fa-solid fa-cart-shopping me-2"></i>Agregar al carrito
                                                     </a>
@@ -306,7 +325,7 @@
                                             </div>
                                         </div>
                                         <div class="col">
-                                            <div class="card cardProducto d-flex flex-column justify-content-center align-items-center">
+                                            <div class="card cardProducto d-flex flex-column justify-content-center align-items-center h-100">
                                                 <a href="#">
                                                     <img src="./resources/images/productos/6.png" alt="Recipiente Hermético Rectangular San Remo Flor 430" class="card-img-top img-fluid w-100"
                                                         loading="lazy">
@@ -314,6 +333,8 @@
                                                 <div class="card-body text-center">
                                                     <h5 class="card-title precio text-success">$749</h5>
                                                     <p class="card-text">Recipiente Hermético Rectangular San Remo Flor 430</p>
+                                                </div>
+                                                <div class="card-footer bg-transparent border-0">
                                                     <a type="button" class="btn btn-primary" href="#carrito">
                                                         <i class="fa-solid fa-cart-shopping me-2"></i>Agregar al carrito
                                                     </a>
@@ -321,13 +342,15 @@
                                             </div>
                                         </div>
                                         <div class="col">
-                                            <div class="card cardProducto d-flex flex-column justify-content-center align-items-center">
+                                            <div class="card cardProducto d-flex flex-column justify-content-center align-items-center h-100">
                                                 <a href="#">
                                                     <img src="./resources/images/productos/7.png" alt="Plato Playo Redondo Durax Orquídea" class="card-img-top img-fluid w-100" loading="lazy">
                                                 </a>
                                                 <div class="card-body text-center">
                                                     <h5 class="card-title precio text-success">$202</h5>
                                                     <p class="card-text">Plato Playo Redondo Durax Orquídea</p>
+                                                </div>
+                                                <div class="card-footer bg-transparent border-0">
                                                     <a type="button" class="btn btn-primary" href="#carrito">
                                                         <i class="fa-solid fa-cart-shopping me-2"></i>Agregar al carrito
                                                     </a>
@@ -335,7 +358,7 @@
                                             </div>
                                         </div>
                                         <div class="col">
-                                            <div class="card cardProducto d-flex flex-column justify-content-center align-items-center">
+                                            <div class="card cardProducto d-flex flex-column justify-content-center align-items-center h-100">
                                                 <a href="#">
                                                     <img src="./resources/images/productos/8.png" alt="Cafetera con Embolo Hudson Estilo Francés 600 Ml" class="card-img-top img-fluid w-100"
                                                         loading="lazy">
@@ -343,6 +366,8 @@
                                                 <div class="card-body text-center">
                                                     <h5 class="card-title precio text-success">$5.181</h5>
                                                     <p class="card-text">Cafetera con Embolo Hudson Estilo Francés 600 Ml</p>
+                                                </div>
+                                                <div class="card-footer bg-transparent border-0">
                                                     <a type="button" class="btn btn-primary" href="#carrito">
                                                         <i class="fa-solid fa-cart-shopping me-2"></i>Agregar al carrito
                                                     </a>
@@ -361,7 +386,6 @@
         <div class="row">
             <div class="col-12 g-0">
                 <footer class="d-flex flex-column flex-wrap justify-content-center align-items-stretch align-content-space-between bg-gradient">
-                    <hr class="m-0 p-0">
                     <a href="./pages/contacto.html" class="align-self-center">
                         <!-- <h3>Contacto</h3> -->
                     </a>
@@ -376,9 +400,9 @@
                                 </div>
                                 <div class="col-sm-12 col-md-3 col-lg-3 gx-sm-4 gx-md-0 fw-bold">
                                     <ul class="px-0 my-0">
-                                        <li>Calle Falsa 1234, Florida, Buenos Aires, Argentina</li>
-                                        <li>Cel: <a href="tel://23923929210">+54 11 12345678</a></li>
-                                        <li>Email: <a href="mailto:ventas@ventas.com">ventas@ventas.com</a></li>
+                                        <li><i class="fa-solid fa-location-dot me-1"></i></i>Calle Falsa 1234, Florida, Buenos Aires, Argentina</li>
+                                        <li><i class="fa-solid fa-phone me-1"></i><a href="tel://23923929210">+54 11 12345678</a></li>
+                                        <li><i class="fa-solid fa-envelope me-1"></i><a href="mailto:ventas@ventas.com">ventas@ventas.com</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-12 col-md-4 col-lg-5">

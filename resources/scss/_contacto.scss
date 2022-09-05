@@ -30,7 +30,7 @@ body {
             }
 
             iframe {
-                @include border(3px, black);
+                // @include border(3px, black);
                 // width: 1300px;
                 height: 400px;
             }

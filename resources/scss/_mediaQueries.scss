@@ -177,7 +177,7 @@
     }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 380px) {
     body {
         header {
             .logo h1 {
@@ -217,24 +217,26 @@
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 355px) {
     body {
         header {
-            .navegador {
-                font-size: 0.7rem;
-
-                .dropdown-menu {
+            .verde {
+                .navegador {
                     font-size: 0.7rem;
-                }
-            }
 
-            .buscador {
-                input {
-                    font-size: 0.7rem;
+                    .dropdown-menu {
+                        font-size: 0.7rem;
+                    }
                 }
 
-                button {
-                    font-size: 0.7rem;
+                .buscador {
+                    input {
+                        font-size: 0.7rem;
+                    }
+
+                    button {
+                        font-size: 0.7rem;
+                    }
                 }
             }
         }
