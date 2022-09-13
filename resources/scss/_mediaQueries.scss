@@ -1,4 +1,4 @@
-/* MediaQuery */
+// MediaQuery
 @media screen and (min-width: 992px) and (max-width: 1195px) {
     body {
         main {
@@ -50,6 +50,28 @@
     }
 }
 
+@media screen and (max-width: 605px) {
+    body {
+        main {
+            .banner {
+                .overlay {
+                    h2 {
+                        font-size: 5rem;
+                    }
+
+                    h3 {
+                        font-size: 2.5rem;
+                    }
+
+                    h4 {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 550px) {
     body {
         header {
@@ -71,6 +93,22 @@
         }
 
         main {
+            .banner {
+                .overlay {
+                    h2 {
+                        font-size: 4rem;
+                    }
+
+                    h3 {
+                        font-size: 1.5rem;
+                    }
+
+                    h4 {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
             .ofertas h2 {
                 font-size: 3.5rem;
             }
@@ -166,6 +204,22 @@
         }
 
         main {
+            .banner {
+                .overlay {
+                    h2 {
+                        font-size: 3.5rem;
+                    }
+
+                    h3 {
+                        font-size: 1.5rem;
+                    }
+
+                    h4 {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
             .ofertas h2 {
                 font-size: 2.6rem;
             }
@@ -206,6 +260,22 @@
         }
 
         main {
+            .banner {
+                .overlay {
+                    h2 {
+                        font-size: 3rem;
+                    }
+
+                    h3 {
+                        font-size: 1.5rem;
+                    }
+
+                    h4 {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
             .ofertas h2 {
                 font-size: 2rem;
             }
@@ -289,6 +359,22 @@
         }
 
         main {
+            .banner {
+                .overlay {
+                    h2 {
+                        font-size: 2.5rem;
+                    }
+
+                    h3 {
+                        font-size: 1.2rem;
+                    }
+
+                    h4 {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
             .ofertas h2 {
                 font-size: 1.5rem;
             }
@@ -303,6 +389,43 @@
 
             .productos h2 {
                 font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+// Login
+@media screen and (min-width: 1201px) {
+    body {
+        main {
+            .login {
+                .input-group {
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        main {
+            .login {
+                .input-group {
+                    width: 75%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        main {
+            .login {
+                .input-group {
+                    width: 100%;
+                }
             }
         }
     }

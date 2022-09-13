@@ -68,15 +68,15 @@ body {
                     // margin-top: 10%;
                     font-family: $fuenteTitulo;
                     font-size: 7rem;
-                    // color: map-get($color, verde);
+                    color: map-get($color, azul);
+                    color: white;
                     // word-wrap: break-word;
-                    // -webkit-text-stroke: 0.3px rgb(0, 0, 0);
+                    // -webkit-text-stroke: 3px map-get($color, azul);
                     // animation: color-change-2x 2s linear infinite alternate both;
                     // mix-blend-mode: overlay;
 
-                    color: white;
                     font-family: $fuenteNavegador;
-                    font-weight: bold;
+                    // font-weight: bold;
                     text-align: center;
                     font-size: 6rem;
                     margin-top: 10%;
@@ -86,17 +86,17 @@ body {
                 }
 
                 h3 {
-                    color: rgb(255, 255, 255);
+                    color: rgb(224, 224, 224);
                     font-family: $fuenteNavegador;
                     font-weight: bold;
                     // text-align: center;
                     font-size: 3rem;
-                    margin-top: 10%;
+                    margin-top: 20%;
                     margin-left: 5%;
                 }
 
                 h4 {
-                    color: rgb(255, 255, 255);
+                    color: rgb(224, 224, 224);
                     font-family: $fuenteNavegador;
                     font-weight: bold;
                     font-size: 1.5rem;
@@ -106,7 +106,7 @@ body {
             }
         }
 
-        /* Ofertas */
+        // Ofertas
         .ofertas {
 
             h2 {
@@ -131,7 +131,7 @@ body {
             }
         }
 
-        /* Categorías */
+        // Categorías 
         .categorias {
             // background-image: url(../images/banners/6.jpg);
             // background-size: cover;
@@ -177,7 +177,7 @@ body {
             }
         }
 
-        /* Productos */
+        // Productos 
         .productos {
             h2 {
                 // @extend main .ofertas h2;
