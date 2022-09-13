@@ -125,6 +125,7 @@ body {
                         border-radius: 10px;
                         object-fit: cover;
                         max-height: 600px;
+                        min-height: 300px;
                         animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
                     }
                 }

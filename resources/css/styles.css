@@ -39,9 +39,9 @@
 
 @keyframes color-change-2x {
   0% {
-    color: #6475c3; }
+    color: #8f8f8f; }
   100% {
-    color: white; } }
+    color: #ffffff; } }
 
 @keyframes rotate-scale-up {
   0% {
@@ -218,6 +218,7 @@ body {
     border-radius: 10px;
     object-fit: cover;
     max-height: 600px;
+    min-height: 300px;
     animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
   body main .categorias .cardCategoria a {
     font-family: "Alfa Slab One", cursive;
