@@ -8,25 +8,7 @@ body {
     // background-position: center center;
 
     background: rgb(100, 117, 195);
-    background: linear-gradient(90deg, rgba(100, 117, 195, 1) 35%, rgba(100, 195, 179, 1) 100%);
-
-    background: rgb(100, 117, 195);
-    background: radial-gradient(circle, rgba(100, 117, 195, 1) 35%, rgba(100, 195, 179, 1) 100%);
-
-    background: rgb(100, 117, 195);
-    background: radial-gradient(circle, rgba(100, 117, 195, 1) 0%, rgba(100, 195, 179, 1) 100%);
-
-    background: rgb(100, 117, 195);
-    background: linear-gradient(0deg, rgba(100, 117, 195, 1) 0%, rgba(100, 195, 179, 1) 100%);
-
-    background: rgb(100, 117, 195);
-    background: linear-gradient(90deg, rgba(100, 117, 195, 1) 0%, rgba(100, 195, 179, 1) 100%);
-
-    background: rgb(100, 117, 195);
-    background: linear-gradient(90deg, rgba(100, 117, 195, 0.5021358885351015) 0%, rgba(100, 195, 179, 1) 100%);
-
-    background: rgb(100, 117, 195);
-    background: linear-gradient(90deg, rgba(100, 117, 195, 0.7010154403558299) 0%, rgba(100, 195, 179, 1) 100%);
+    background: linear-gradient(180deg, rgba(100, 117, 195, 1) 0%, rgba(100, 195, 179, 1) 100%);
 
     main {
         .banner {
@@ -38,8 +20,6 @@ body {
             video {
                 position: absolute;
                 object-fit: cover;
-                // top: 0;
-                // left: 0;
                 width: 100%;
                 min-width: 100%;
                 max-width: 100%;
@@ -51,8 +31,6 @@ body {
 
             .overlay {
                 position: absolute;
-                // top: 0;
-                // left: 0;
                 z-index: 1;
                 background: rgba(0, 0, 0, .4);
                 background-image: linear-gradient(to top, rgba(0, 0, 0, 0.925) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.925) 100%);
@@ -108,7 +86,6 @@ body {
 
         // Ofertas
         .ofertas {
-
             h2 {
                 font-family: $fuenteTitulo;
                 font-size: map-get($size, titulo);
@@ -134,12 +111,7 @@ body {
 
         // Categorías 
         .categorias {
-            // background-image: url(../images/banners/6.jpg);
-            // background-size: cover;
-            // background-position: center center;
-
             .cardCategoria {
-
                 a {
                     font-family: $fuenteTitulo;
                     font-size: 1.8rem;

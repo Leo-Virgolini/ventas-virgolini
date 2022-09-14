@@ -145,19 +145,7 @@ header {
 body {
   min-height: 100vh;
   background: #6475c3;
-  background: linear-gradient(90deg, #6475c3 35%, #64c3b3 100%);
-  background: #6475c3;
-  background: radial-gradient(circle, #6475c3 35%, #64c3b3 100%);
-  background: #6475c3;
-  background: radial-gradient(circle, #6475c3 0%, #64c3b3 100%);
-  background: #6475c3;
-  background: linear-gradient(0deg, #6475c3 0%, #64c3b3 100%);
-  background: #6475c3;
-  background: linear-gradient(90deg, #6475c3 0%, #64c3b3 100%);
-  background: #6475c3;
-  background: linear-gradient(90deg, rgba(100, 117, 195, 0.502136) 0%, #64c3b3 100%);
-  background: #6475c3;
-  background: linear-gradient(90deg, rgba(100, 117, 195, 0.701015) 0%, #64c3b3 100%); }
+  background: linear-gradient(180deg, #6475c3 0%, #64c3b3 100%); }
   body main .banner {
     position: relative;
     height: 100vh;
@@ -315,7 +303,6 @@ body main .carrito {
     font-size: 3.5rem; }
 
 body main .login {
-  min-height: 50vh;
   font-family: "Alfa Slab One", cursive; }
   body main .login h2 {
     font-family: "Alfa Slab One", cursive;
@@ -338,7 +325,6 @@ body main .registro {
 footer {
   background-color: #6475c3;
   font-size: 1rem;
-  margin-top: auto;
   box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 4px 6px rgba(0, 0, 0, 0.45);
   border-radius: 5px; }
   footer h3 {
@@ -401,7 +387,8 @@ footer {
     body header .verde .navegador .dropdown-menu.show {
       font-size: 1.3rem; }
   body main .banner .overlay h2 {
-    font-size: 4rem; }
+    font-size: 4rem;
+    margin-top: 50%; }
   body main .banner .overlay h3 {
     font-size: 1.5rem; }
   body main .banner .overlay h4 {
@@ -526,3 +513,27 @@ footer {
 @media screen and (max-width: 700px) {
   body main .login .input-group {
     width: 100%; } }
+
+@media screen and (max-width: 410px) {
+  body main .contacto h2 {
+    font-size: 4rem; }
+  body main .contacto h3 {
+    font-size: 2rem; } }
+
+@media screen and (max-width: 330px) {
+  body main .contacto h2 {
+    font-size: 3rem; }
+  body main .contacto h3 {
+    font-size: 1.5rem; } }
+
+@media screen and (max-width: 550px) {
+  body main .registro h2 {
+    font-size: 4rem; } }
+
+@media screen and (max-width: 450px) {
+  body main .registro h2 {
+    font-size: 3rem; } }
+
+@media screen and (max-width: 350px) {
+  body main .registro h2 {
+    font-size: 2.2rem; } }

@@ -97,6 +97,7 @@
                 .overlay {
                     h2 {
                         font-size: 4rem;
+                        margin-top: 50%;
                     }
 
                     h3 {
@@ -425,6 +426,76 @@
             .login {
                 .input-group {
                     width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// Contacto
+@media screen and (max-width: 410px) {
+    body {
+        main {
+            .contacto {
+                h2 {
+                    font-size: 4rem;
+                }
+
+                h3 {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 330px) {
+    body {
+        main {
+            .contacto {
+                h2 {
+                    font-size: 3rem;
+                }
+
+                h3 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+// Registro
+@media screen and (max-width: 550px) {
+    body {
+        main {
+            .registro {
+                h2 {
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        main {
+            .registro {
+                h2 {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    body {
+        main {
+            .registro {
+                h2 {
+                    font-size: 2.2rem;
                 }
             }
         }
