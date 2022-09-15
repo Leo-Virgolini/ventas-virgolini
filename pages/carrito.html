@@ -119,46 +119,165 @@
                         <div class="row">
                             <div class="col-12">
                                 <h2 class="text-center">Carrito</h2>
-                                <table class="table table-light table-striped table-hover align-middle text-center">
-                                    <thead class="table-dark text-center">
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <!-- <th scope="col">Imagen</th> -->
-                                            <th scope="col">Artículo</th>
-                                            <th scope="col">Cantidad</th>
-                                            <th scope="col">Precio</th>
-                                            <th scope="col">Subtotal</th>
-                                            <th scope="col">Quitar</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>
-                                                <img src="../resources/images/productos/2.png" class="img-fluid" loading="lazy" alt="Jarra de Vidrio Templado Luminarc Tivoli 2,3 L">
-                                                <p class="mb-0">Jarra de Vidrio Templado Luminarc Tivoli 2,3 L</p>
-                                            </td>
-                                            <td>2</td>
-                                            <td>$2.984</td>
-                                            <td>$5.968</td>
-                                            <td><button type="submit" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>
-                                                <img src="../resources/images/productos/12.png" class="img-fluid" loading="lazy" alt="Set Hudson Inducción Cerámica">
-                                                <p class="mb-0">Set Hudson Inducción Cerámica</p>
-                                            </td>
-                                            <td>1</td>
-                                            <td>$53.528</td>
-                                            <td>$53.528</td>
-                                            <td><button type="submit" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <p class="text-success">TOTAL: $59.496</p>
-                                <div class="col-12 mb-5">
-                                    <button type="submit" class="btn btn-lg btn-primary"><i class="fa-solid fa-credit-card me-2"></i>Generar pago</button>
+                                <div class="table-responsive">
+                                    <table class="table table-light table-striped table-hover align-middle text-center">
+                                        <thead class="table-dark text-center">
+                                            <tr>
+                                                <th scope="col">Artículo</th>
+                                                <th scope="col">Cantidad</th>
+                                                <th scope="col">Precio</th>
+                                                <th scope="col">Subtotal</th>
+                                                <th scope="col">Quitar</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="../resources/images/productos/2.png" class="img-fluid" loading="lazy" alt="Jarra de Vidrio Templado Luminarc Tivoli 2,3 L">
+                                                    <p class="mb-0">Jarra de Vidrio Templado Luminarc Tivoli 2,3 L</p>
+                                                </td>
+                                                <td><input class="text-center" type="number" value="2" min="1" max="1000" step="1"></td>
+                                                <td>$2.984</td>
+                                                <td>$5.968</td>
+                                                <td><button type="submit" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="../resources/images/productos/12.png" class="img-fluid" loading="lazy" alt="Set Hudson Inducción Cerámica">
+                                                    <p class="mb-0">Set Hudson Inducción Cerámica</p>
+                                                </td>
+                                                <td><input class="text-center" type="number" value="1" min="1" max="1000" step="1"></td>
+                                                <td>$53.528</td>
+                                                <td>$53.528</td>
+                                                <td><button type="submit" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="row g-5">
+                                    <div class="col-md-5 col-lg-4 order-md-last">
+                                        <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                            <span class="text-primary">Tu carrito</span>
+                                            <span class="badge bg-primary rounded-pill">2</span>
+                                        </h4>
+                                        <ul class="list-group mb-3">
+                                            <li class="list-group-item d-flex justify-content-between lh-sm">
+                                                <div>
+                                                    <h6 class="my-0">Jarra de Vidrio Templado Luminarc Tivoli 2,3 L</h6>
+                                                    <small class="text-muted">2 x $2.984</small>
+                                                </div>
+                                                <span class="text-muted">$5.968</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between lh-sm">
+                                                <div>
+                                                    <h6 class="my-0">Set Hudson Inducción Cerámica</h6>
+                                                    <small class="text-muted">1 x $53.528</small>
+                                                </div>
+                                                <span class="text-muted">$53.528</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between bg-light">
+                                                <div class="text-success">
+                                                    <h6 class="my-0">Código promocional</h6>
+                                                    <small>PROMO</small>
+                                                </div>
+                                                <span class="text-success">−$1.000</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between">
+                                                <span>Total ($)</span>
+                                                <strong>$58.496</strong>
+                                            </li>
+                                        </ul>
+                                        <form class="card p-2">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Código promocional" required>
+                                                <button type="submit" class="btn btn-secondary">Agregar</button>
+                                            </div>
+                                        </form>
+
+                                        <p class="text-success">TOTAL: $58.496</p>
+                                    </div>
+
+                                    <div class="col-md-7 col-lg-8">
+                                        <h4 class="mb-3">Facturación</h4>
+                                        <form action="./404.html">
+                                            <div class="row g-3">
+                                                <div class="col-sm-6">
+                                                    <label for="nombre" class="form-label">Nombre</label>
+                                                    <input type="text" class="form-control" id="nombre" placeholder="" value="" required="">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label for="apellido" class="form-label">Apellido</label>
+                                                    <input type="text" class="form-control" id="apellido" placeholder="" value="" required="">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="direccion" class="form-label">Dirección</label>
+                                                    <input type="text" class="form-control" id="direccion" placeholder="Calle 1234" required="">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="direccion2" class="form-label">Dirección 2<span class="text-muted">(Opcional)</span></label>
+                                                    <input type="text" class="form-control" id="direccion2" placeholder="Calle 1234">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="provincia" class="form-label">Provincia</label>
+                                                    <select class="form-select" id="provincia" required="">
+                                                        <option value="">Elije...</option>
+                                                        <option>Buenos Aires</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="localidad" class="form-label">Localidad</label>
+                                                    <select class="form-select" id="localidad" required="">
+                                                        <option value="">Elije...</option>
+                                                        <option>Florida</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label for="cp" class="form-label">Código postal</label>
+                                                    <input type="text" class="form-control" id="cp" placeholder="" required="">
+                                                </div>
+                                            </div>
+                                            <hr class="my-4">
+                                            <h4 class="mb-3">Método de pago</h4>
+                                            <div class="my-3">
+                                                <div class="form-check">
+                                                    <input id="credito" name="pago" type="radio" class="form-check-input" checked="" required="">
+                                                    <label class="form-check-label" for="credit">Tarjeta de crédito</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input id="debito" name="pago" type="radio" class="form-check-input" required="">
+                                                    <label class="form-check-label" for="debit">Tarjeta de débito</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input id="paypal" name="pago" type="radio" class="form-check-input" required="">
+                                                    <label class="form-check-label" for="paypal">MercadoPago</label>
+                                                </div>
+                                            </div>
+                                            <div class="row gy-3">
+                                                <div class="col-md-6">
+                                                    <label for="tarjeta-nombre" class="form-label">Nombre en la tarjeta</label>
+                                                    <input type="text" class="form-control" id="tarjeta-nombre" placeholder="" required="">
+                                                    <small class="text-muted">Nombre completo como figura en la tarjeta</small>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="tarjeta-numero" class="form-label">Número de tarjeta</label>
+                                                    <input type="text" class="form-control" id="tarjeta-numero" placeholder="" required="">
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label for="tarjeta-vencimiento" class="form-label">Fecha de vencimiento</label>
+                                                    <input type="text" class="form-control" id="tarjeta-vencimiento" placeholder="" required="">
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label for="tarjeta-cvv" class="form-label">CVV</label>
+                                                    <input type="text" class="form-control" id="tarjeta-cvv" placeholder="" required="">
+                                                </div>
+                                            </div>
+                                            <hr class="my-4">
+                                            <div class="col-12 mb-5">
+                                                <button type="submit" class="w-100 btn btn-lg btn-primary"><i class="fa-solid fa-credit-card me-2"></i>Generar pago</button>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>

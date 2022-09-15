@@ -537,3 +537,45 @@ footer {
 @media screen and (max-width: 350px) {
   body main .registro h2 {
     font-size: 2.2rem; } }
+
+@media screen and (max-width: 850px) {
+  body main .carrito table thead tr th {
+    font-size: 1rem; }
+  body main .carrito table tbody tr td {
+    font-size: 1rem; }
+    body main .carrito table tbody tr td p {
+      font-size: 0.8rem; }
+    body main .carrito table tbody tr td img {
+      max-width: 200px;
+      max-height: 200px; }
+    body main .carrito table tbody tr td button {
+      font-size: 2rem; }
+  body main .carrito p {
+    font-size: 3rem; }
+  body main .carrito button {
+    font-size: 3rem; } }
+
+@media screen and (max-width: 620px) {
+  body main .carrito table thead tr th {
+    font-size: 1rem; }
+  body main .carrito table tbody tr td {
+    font-size: 1rem; }
+    body main .carrito table tbody tr td p {
+      font-size: 0.8rem; }
+    body main .carrito table tbody tr td img {
+      max-width: 150px;
+      max-height: 150px; }
+    body main .carrito table tbody tr td button {
+      font-size: 1.5rem; }
+  body main .carrito p {
+    font-size: 2rem; }
+  body main .carrito button {
+    font-size: 2rem; } }
+
+@media screen and (max-width: 360px) {
+  body main .carrito h2 {
+    font-size: 3.3rem; }
+  body main .carrito p {
+    font-size: 2.5rem; }
+  body main .carrito button {
+    font-size: 1.5rem; } }
